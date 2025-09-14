@@ -11,8 +11,6 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const simplePlantUML = require("@akebifiky/remark-simple-plantuml");
 const homeShowcaseProjectsPlugin = require("./plugins/home-showcase");
 const cryptoPricePlugin = require("./plugins/crypto-price");
-const xdrPricePlugin = require("./plugins/xdr-price");
-const icpXdrPricePlugin = require("./plugins/icp-xdr-price");
 const tailwindPlugin = require("./plugins/tailwind");
 const matomoPlugin = require("./plugins/matomo");
 const customWebpack = require("./plugins/custom-webpack");
@@ -24,7 +22,6 @@ const howItWorksCardsPlugin = require("./plugins/howitworks-cards");
 const howItWorksArticlesPlugin = require("./plugins/howitworks-articles");
 const math = require("remark-math");
 const katex = require("rehype-katex");
-const votingRewardsPlugin = require("./plugins/voting-rewards");
 const {
   getRedirects,
   getSplatRedirects,
@@ -34,7 +31,6 @@ const {
 const fs = require("fs");
 const validateShowcasePlugin = require("./plugins/validate-showcase.js");
 const contentfulPlugin = require("./plugins/contentful");
-const snsDataPlugin = require("./plugins/sns-data");
 const airtablePlugin = require("./plugins/airtable");
 const youtubePlugin = require("./plugins/youtube");
 
@@ -415,18 +411,14 @@ const config = {
     customWebpack,
     tailwindPlugin,
     cryptoPricePlugin,
-    icpXdrPricePlugin,
-    xdrPricePlugin,
     homeShowcaseProjectsPlugin,
     howItWorksArticlesPlugin,
     howItWorksCardsPlugin,
-    votingRewardsPlugin,
     roadmapDataPlugin,
     whatIsIcpDataPlugin,
     matomoPlugin,
     blogPostsPlugin,
     contentfulPlugin,
-    snsDataPlugin,
     airtablePlugin,
     youtubePlugin,
     validateShowcasePlugin,
@@ -540,14 +532,27 @@ const config = {
         style: 'dark',
         links: [
           {
+            title: "Ecosystem",
             items: [
               {
-                label: "BigFile Forum",
-                href: "https://forum.thebigfile.com/",
+                label: "Technology",
+                href: "/what-is-big-file",
               },
               {
-                label: "Node Providers",
-                href: "/node-providers",
+                label: "Storage Network",
+                href: "/file-storage",
+              },
+              {
+                label: "AI Marketplace",
+                href: "/decentralized-ai",
+              },
+              {
+                label: "BIG Token",
+                href: "/docs/current/tokenomics",
+              },
+              {
+                label: "Roadmap",
+                href: "/roadmap",
               },
               {
                 label: "Explorer",
@@ -556,12 +561,66 @@ const config = {
             ],
           },
           {
+            title: "Developers",
             items: [
               {
-                label: "BigFile Careers",
+                label: "Documentation",
+                href: "/docs/current/home",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/thebigfilecom",
+              },
+              {
+                label: "Developer Grants",
+                href: "https://thebigfile.com/grants",
+              },
+              {
+                label: "Bug Bounty",
+                href: "https://thebigfile.com/bug-bounty",
+              },
+              {
+                label: "Sample Code",
+                href: "/docs/current/developer-docs/samples",
+              },
+            ],
+          },
+          {
+            title: "Community",
+            items: [
+              {
+                label: "Join Discord",
+                href: "https://discord.gg/nyTAmMntqp",
+              },
+              {
+                label: "Forum",
+                href: "https://forum.thebigfile.com/",
+              },
+              {
+                label: "Blog / Announcements",
+                href: "https://bigfile.medium.com/",
+              },
+              {
+                label: "Governance",
+                href: "/docs/current/governance",
+              },
+            ],
+          },
+          {
+            title: "Project",
+            items: [
+              {
+                label: "About BigFile",
+                href: "/what-is-big-file",
+              },
+              {
+                label: "Careers",
                 href: "https://careers.thebigfile.com/",
               },
-              { label: "Developer Grants", href: "https://thebigfile.com/grants" },
+              {
+                label: "Brand Kit / Press",
+                href: "/press-kit",
+              },
               {
                 label: "Support & Feedback",
                 href: "https://support.thebigfile.com/",
@@ -579,6 +638,16 @@ const config = {
                 ),
                 icon: `data:image/svg+xml;base64,${fs
                   .readFileSync("./static/img/svgIcons/twitter-white.svg")
+                  .toString("base64")}`,
+              },
+              {
+                label: "Discord",
+                to: "https://discord.gg/nyTAmMntqp",
+                iconLight: getImageDataUrl(
+                  "./static/img/svgIcons/purple/discord.svg"
+                ),
+                icon: `data:image/svg+xml;base64,${fs
+                  .readFileSync("./static/img/svgIcons/purple/discord.svg")
                   .toString("base64")}`,
               },
               {

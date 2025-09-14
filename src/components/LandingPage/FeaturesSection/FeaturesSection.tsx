@@ -35,14 +35,14 @@ const FeaturesSection = () => {
             loading="lazy"
             className="w-30"
           />
-          <h3 className="tw-lead md:tw-title-sm mb-0">Decentralized AI</h3>
+          <h3 className="tw-lead md:tw-title-sm mb-0">Democratized AI Compute</h3>
           <p className="mb-0 tw-paragraph-sm text-black/60">
-          Artificial Intelligence relies on vast amounts of data for training, analysis, and execution. Managing this data efficiently and securely is a critical challenge, especially when immutability and comprehensive audit trails are essential.
+          Access a global supercomputer powered by a distributed network of GPUs. Train AI models, run complex simulations, and render graphics affordably and on-demand.
           </p>
           <p className="mb-0 -mx-3">
             <Link className="link-primary " href="/decentralized-ai">
               <LinkArrowRight />
-              Decentralized AI Details
+              Explore AI Marketplace
             </Link>
           </p>
         </motion.div>
@@ -56,14 +56,14 @@ const FeaturesSection = () => {
             loading="lazy"
             className="w-30"
           />
-          <h3 className="tw-lead md:tw-title-sm mb-0">Sites and Apps</h3>
+          <h3 className="tw-lead md:tw-title-sm mb-0">Permanent & Verifiable Storage</h3>
           <p className="mb-0 tw-paragraph-sm text-black/60">
-          Web apps and static sites can be deployed on BigFile, ensuring they remain permanently accessible and unaltered, all for a low, one-time hosting fee. This makes it an ideal solution for decentralized apps, archival websites, educational resources, and legacy projects that require long-term availability without ongoing maintenance costs.
+          Go beyond temporary cloud storage. BigFile is architected for permanence, making it ideal for hosting dApps, archiving critical data, and preserving digital heritage. ZK-proofs mathematically guarantee that your data is stored correctly.
           </p>
           <p className="mb-0  -mx-3">
             <Link className="link-primary" href="/capabilities">
               <LinkArrowRight />
-              BigFile Capabilities Overview
+              Learn About Our Technology
             </Link>
           </p>
         </motion.div>
@@ -77,14 +77,14 @@ const FeaturesSection = () => {
             loading="lazy"
             className="w-30"
           />
-          <h3 className="tw-lead md:tw-title-sm mb-0">File Storage</h3>
+          <h3 className="tw-lead md:tw-title-sm mb-0">Your Data, Your Sovereignty</h3>
           <p className="mb-0 tw-paragraph-sm text-black/60">
-          Permanent data storage on the BigFile blockchain guarantees that public and private documents, media, and other digital assets remain undeletable. This makes it an ideal solution for preserving legal, medical, historical records, or any data that must never be lost.
+          Your files are encrypted, split into fragments, and distributed across a global network of nodes. Only you hold the keys. This provides unparalleled resilience against censorship, single points of failure, and data breaches.
           </p>
           <p className="mb-0 -mx-3 flex flex-col gap-3 items-center">
             <Link className="link-primary" href="/file-storage">
               <LinkArrowRight />
-              BigDrive on BigFile
+              How We Secure Data
             </Link>
             <Link className="link-primary" href="/ecosystem">
               <LinkArrowRight />
@@ -102,9 +102,9 @@ const FeaturesSection = () => {
             loading="lazy"
             className="w-30"
           />
-          <h3 className="tw-lead md:tw-title-sm mb-0">Oracle and Blockchain Data</h3>
+          <h3 className="tw-lead md:tw-title-sm mb-0">An Interoperable Data Hub</h3>
           <p className="mb-0 tw-paragraph-sm text-black/60">
-           Blockchain applications and oracle services must be able to trust that the data they rely on will remain permanently accessible. BigFile indexes and retrieves decentralized data storage on BigFile blockchain, ensuring that data such as transaction histories, price feeds, and oracle inputs are archived and served forever.
+          BigFile is not an isolated island. Built on Polygon and designed for the AggLayer, our network will serve as a foundational data layer for the entire Web3 ecosystem. Smart contracts on other chains can reliably query and access data stored on BigFile.
           </p>
           <p className="mb-0 -mx-3">
             <Link
@@ -112,7 +112,7 @@ const FeaturesSection = () => {
               href="/how-it-works"
             >
               <LinkArrowRight />
-              Oracle and Blockchain Data
+              Discover the Ecosystem
             </Link>
           </p>
         </motion.div>
@@ -126,14 +126,14 @@ const FeaturesSection = () => {
             loading="lazy"
             className="w-30"
           />
-          <h3 className="tw-lead md:tw-title-sm mb-0">Social Platforms</h3>
+          <h3 className="tw-lead md:tw-title-sm mb-0">Power the Network, Earn BIG</h3>
           <p className="mb-0 tw-paragraph-sm text-black/60">
-           Social platforms share IP addresses of users with governments. Privacy-focused social apps have centralized servers. In an era where data ownership and censorship are growing concerns, it’s time for social apps to benefit from the immutable, censorship-resistant nature of the decentralized web.
+          Become the backbone of the new decentralized internet. Our DePIN model invites you to contribute your idle disk space or GPU power. In return for your service, the protocol rewards you with BIG tokens, creating a sustainable, community-owned infrastructure.
           </p>
           <p className="mb-0">
             <Link className="link-primary" href="/ecosystem">
               <LinkArrowRight />
-              BigFile Ecosystem
+              Become a Provider
             </Link>
           </p>
         </motion.div>
@@ -147,12 +147,15 @@ const FeaturesSection = () => {
             loading="lazy"
             className="w-30"
           />
-          <h3 className="tw-lead md:tw-title-sm mb-0">Cost effective</h3>
+          <h3 className="tw-lead md:tw-title-sm mb-0">Radically Lower Costs</h3>
           <p className="mb-0 tw-paragraph-sm text-black/60">
-           While the monthly costs of traditional cloud providers remain constant, the cost of storing 1 GB of data is calculated over time. BigDrive may have higher initial costs, but it offers significantly lower prices in the long term.
+          By leveraging a global network of independent providers, we cut out the expensive overhead of traditional, centralized cloud giants. Experience a dramatic reduction in costs for both long-term storage and high-performance computing.
           </p>
           <p className="mb-0">
-            <span className="tw-heading-5">$30 / GB / Forever</span>
+            <Link className="link-primary" href="/ecosystem">
+              <LinkArrowRight />
+              See Pricing Models
+            </Link>
           </p>
         </motion.div>
       </AnimateSpawn>

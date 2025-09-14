@@ -1,15 +1,11 @@
 ---
-title: Proof-of-Access
+title: Settlement & Logic Layer
 ---
 
 ![](/img/how-it-works/peer-to-peer.webp)
 
-# Proof-of-Access
+# Settlement & Logic Layer
 
-Succinct Proofs of Random Access (SPoRA) is a consensus mechanism used to confirm transactions and validate blocks on the BigFile decentralized network. Instead of relying on energy-intensive computational work like Bitcoin does with Proof of Work, BigFile uses SPoRA to verify blocks and confirm transactions in a more efficient manner.
-
-SPoRA allows miners on the BigFile network to prove they have access to random historical data. This eliminates the need for repetitively solving cryptographic puzzles in order to add new blocks to the chain.
-
-Succinct Proofs of Random Access (SPoRA) is a consensus mechanism used to confirm transactions and validate blocks on the Arweave decentralized network. 
+The BigFile Chain (our L2) is the brain of the ecosystem. All marketplace transactions, tax mechanisms, and provider rewards happen here instantly and at a very low cost. BIG serves as the native gas token for this layer, powering all operations.
 
 [Go deeper](/how-it-works/proof-of-access/)

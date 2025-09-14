@@ -1,12 +1,20 @@
 import React, { FC, useCallback } from "react";
-import blogPosts from "@site/.docusaurus/blog-posts/default/blog-posts.json";
 import clsx from "clsx";
 import { tagColors } from "@site/src/utils/blog";
 import slugify from "slugify";
 import Link from "@docusaurus/Link";
 import LinkArrowRight from "../Common/Icons/LinkArrowRight";
 
-const MAX_POSTS = Math.min(blogPosts.length, 5);
+// Safely import blog posts with fallback
+let blogPosts = [];
+try {
+  blogPosts = require("@site/.docusaurus/blog-posts/default/blog-posts.json");
+} catch (error) {
+  console.warn("Blog posts not found:", error);
+  blogPosts = [];
+}
+
+const MAX_POSTS = Math.min(blogPosts?.length || 0, 5);
 
 const Blog: FC = () => {
   const [postIndex, setPostIndex] = React.useState(0);
@@ -19,7 +27,12 @@ const Blog: FC = () => {
     setPostIndex((prev) => (prev - 1 + MAX_POSTS) % MAX_POSTS);
   }, [postIndex]);
 
-  const post = blogPosts[postIndex];
+  const post = blogPosts?.[postIndex];
+
+  // If no blog posts available, return null or a placeholder
+  if (!blogPosts || blogPosts.length === 0 || !post) {
+    return null;
+  }
 
   return (
     <div className="rounded-lg bg-white/70 flex flex-col px-0 py-0 overflow-hidden md:flex-row md:items-stretch">

@@ -25,7 +25,7 @@ const IntroCards: React.FC = () => {
                 What is the BigFile
               </h2>
               <p className="tw-paragraph-sm md:tw-lead mb-6 text-white/60">
-              BigFile is an AI-powered decentralized blockchain network engineered to provide decentralized, immutable, and scalable data storage solutions. It is designed to securely host applications, files, and Big Data, while facilitating computations on smart contracts at unparalleled scalability.
+              BigFile is a DePIN (Decentralized Physical Infrastructure Network) that creates a two-sided marketplace for the core resources of the digital world: storage and compute. We empower anyone to contribute their idle disk space and GPU power, and in return, provide the world with a secure, censorship-resistant, and radically cost-effective cloud infrastructure.
               </p>
               <p className="mb-0 self-stretch sm:self-auto">
                 <Link
@@ -64,14 +64,14 @@ const IntroCards: React.FC = () => {
             variants={transitions.item}
           >
             <h2 className="tw-heading-4 md:tw-heading-3 mb-0">
-             BigDrive - File Storage
+             Sovereign Storage Layer
             </h2>
             <p className="tw-paragraph md:tw-lead-sm mb-0 flex-1">
-            Streamline your digital world with BigDrive: the app that simplifies file management and inspires creativity with its <strong>Pay Once, Enjoy Forever</strong> model.
+            Reclaim ownership of your digital world. BigFile provides a censorship-resistant and permanent storage layer by encrypting, sharding, and distributing your data across a global network of independent nodes. Providers are rewarded in <strong>BIG</strong> for contributing the backbone of this new data economy.
             </p>
             <p className="mb-0">
               <Link className="button-outline" href="/bigdrive">
-               Get Started BigDrive
+              Explore Storage Layer
               </Link>
             </p>
           </motion.div>
@@ -80,14 +80,14 @@ const IntroCards: React.FC = () => {
             variants={transitions.item}
           >
             <h2 className="tw-heading-4 md:tw-heading-3 mb-0">
-              BigFile Mining
+            Decentralized AI Compute Cloud
             </h2>
             <p className="tw-paragraph md:tw-lead-sm mb-0 flex-1">
-            The BigFile network's mining process is optimized to maximize the replication of datasets, ensuring enhanced redundancy and data availability.
+            The future of Artificial Intelligence shouldn't be confined to the data centers of a few corporations. BigFile aggregates a global network of underutilized GPUs, creating a powerful, on-demand marketplace for high-performance computing. Train complex AI models or perform intensive data analysis at a fraction of the cost.
             </p>
             <p className="mb-0">
               <Link className="button-outline" href="/">
-                Explore BigFile Gateway
+              Access On-Demand GPUs
               </Link>
             </p>
           </motion.div>
@@ -95,13 +95,13 @@ const IntroCards: React.FC = () => {
             className="rounded-3xl bg-white px-6 py-8 md:p-15 flex flex-col gap-4 md:gap-6"
             variants={transitions.item}
           >
-            <h2 className="tw-heading-4 md:tw-heading-3 mb-0">Your BIG ID</h2>
+            <h2 className="tw-heading-4 md:tw-heading-3 mb-0">You Are The Network</h2>
             <p className="tw-paragraph md:tw-lead-sm mb-0 flex-1">
-            BIG ID is a platform enabling users to securely store and manage their data on the BigFile network. It offers the ability to permanently store files in a decentralized and reliable manner.
+            Monetize your idle hardware and become a foundational part of the decentralized internet. Whether you have spare disk space or underutilized GPU cycles, you can connect to the BigFile network. Our autonomous protocol matches your resources with user demand, rewarding you with BIG tokens for every service provided. Participation is permissionless.
             </p>
             <p className="mb-0">
               <Link className="button-outline" href="/big-id">
-                One ID for all services
+               Become a Provider
               </Link>
             </p>
           </motion.div>

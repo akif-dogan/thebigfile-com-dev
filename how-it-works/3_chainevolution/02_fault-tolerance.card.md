@@ -1,11 +1,11 @@
 ---
-title: Fault tolerance
+title: The AggLayer & True Interoperability
 ---
 
 ![](/img/how-it-works/fault-tolerance.webp)
 
-# Fault tolerance
+# The AggLayer & True Interoperability
 
-In any large-scale distributed system, node failures are inevitable due to hardware malfunctions, network issues, or an owner's decision to withdraw a node from the network. When this occurs, the BigFile Network System seamlessly replaces the failed node with a spare node within the subnet. The new node synchronizes its state with the existing nodes and immediately begins participating in the subnet blockchain's consensus protocol.
+A fault-tolerant network is just the beginning. BigFile is designed to be a foundational layer for a unified Web3, not an isolated island. By connecting to Polygon's upcoming Aggregation Layer (AggLayer), we will enable near-instant, atomic swaps and shared liquidity with every other chain in the ecosystem. This means dApps on other networks can seamlessly access BigFile's storage and AI compute resources, creating a truly interconnected and liquid digital economy.
 
-[Go deeper](/how-it-works/fault-tolerance/)
+[Learn About the AggLayer](/how-it-works/fault-tolerance/)

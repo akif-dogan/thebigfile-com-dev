@@ -4,8 +4,8 @@ title: Serving Web content
 
 ![](/img/how-it-works/web-content.jpg)
 
-# Smart Contracts serve the web
+# Host Resilient dApps & Websites
 
-BigFile is a blockchain that can host an entire dapp—including the frontend, backend, and data. This is a crucial and distinguishing feature, allowing dapps to run 100% on-chain, thereby inheriting the security and decentralization of the blockchain without sacrificing speed or affordability. This capability is made possible because BIG can securely serve HTTP requests.
+Say goodbye to centralized servers and single points of failure. With BigFile's permanent storage layer, you can host your entire web application—from the frontend to the backend assets—directly on our decentralized network. This ensures your dApp or website is censorship-resistant, always available, and can be updated transparently via smart contract logic or DAO governance.
 
-[Go deeper](/how-it-works/smart-contracts-serve-the-web/)
+[Learn to Host a dApp](/how-it-works/smart-contracts-serve-the-web/)

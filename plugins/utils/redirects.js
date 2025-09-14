@@ -126,7 +126,7 @@ const redirects = `
   /howitworks/* /how-it-works/:splat
   /sustainability /capabilities/sustainability
   /docs/current/tutorials/deploy_sample_app /docs/current/tutorials/developer-journey/
-  /install.sh)" /docs/current/developer-docs/getting-started/install/
+  /install.sh /docs/current/developer-docs/getting-started/install/
   /docs/current/tutorials/create_your_first_app/ /docs/current/tutorials/developer-journey/
   /docs/quickstart/quickstart-intro.html /docs/current/developer-docs/getting-started/install/
   /docs/ic-identity-guide/auth-how-to.html /docs/current/developer-docs/web-apps/user-login/big-id/integrate-big-id/
@@ -185,72 +185,6 @@ const redirects = `
   /docs/current/developer-docs/agents/ic-agent-dfinity /docs/current/developer-docs/developer-tools/off-chain/agents/rust-agent
   /docs/current/references/gitpod /docs/current/developer-docs/developer-tools/ide/gitpod
   /docs/current/developer-docs/setup/vs-code /docs/current/developer-docs/developer-tools/ide/vs-code
-  /docs/current/references/cli-reference/ /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/
-  /docs/current/references/cli-reference/big-parent /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-parent
-  /docs/current/references/cli-reference/big-bootstrap /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-bootstrap
-  /docs/current/references/cli-reference/big-build /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-build
-  /docs/current/references/cli-reference/big-cache /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-cache
-  /docs/current/references/cli-reference/big-canister /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-canister
-  /docs/current/references/cli-reference/big-deploy /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-deploy
-  /docs/current/references/cli-reference/big-generate /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-generate
-  /docs/current/references/cli-reference/big-help /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-help
-  /docs/current/references/cli-reference/big-identity /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-identity
-  /docs/current/references/cli-reference/big-info /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-info
-  /docs/current/references/cli-reference/big-ledger /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-ledger
-  /docs/current/references/cli-reference/big-new /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-new
-  /docs/current/references/cli-reference/big-ping /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-ping
-  /docs/current/references/cli-reference/big-quickstart /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-quickstart
-  /docs/current/references/cli-reference/big-schema /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-schema
-  /docs/current/references/cli-reference/big-start /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-start
-  /docs/current/references/cli-reference/big-stop /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-stop
-  /docs/current/references/cli-reference/big-upgrade /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-upgrade
-  /docs/current/references/cli-reference/big-wallet /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-wallet
-  /docs/current/references/cli-reference/big-envars /docs/current/developer-docs/developer-tools/cli-tools/cli-reference/big-envars
-  /docs/current/references/cli-reference/big-json-reference /docs/current/developer-docs/developer-tools/cli-tools/big-json-reference
-  /docs/current/references/quill-cli-reference/ /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/quill-parent
-  /docs/current/references/quill-cli-reference/quill-account-balance /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/quill-account-balance
-  /docs/current/references/quill-cli-reference/ckbtc/quill-ckbtc /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/ckbtc/quill-ckbtc
-  /docs/current/references/quill-cli-reference/ckbtc/quill-ckbtc-balance /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/ckbtc/quill-ckbtc-balance
-  /docs/current/references/quill-cli-reference/ckbtc/quill-ckbtc-retrieve-btc /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/ckbtc/quill-ckbtc-retrieve-btc
-  /docs/current/references/quill-cli-reference/ckbtc/quill-ckbtc-retrieve-btc-status /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/ckbtc/quill-ckbtc-retrieve-btc-status
-  /docs/current/references/quill-cli-reference/ckbtc/quill-ckbtc-transfer /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/ckbtc/quill-ckbtc-transfer
-  /docs/current/references/quill-cli-reference/ckbtc/quill-ckbtc-update-balance /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/ckbtc/quill-ckbtc-update-balance
-  /docs/current/references/quill-cli-reference/ckbtc/quill-ckbtc-withdrawal-address /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/ckbtc/quill-ckbtc-withdrawal-address
-  /docs/current/references/quill-cli-reference/quill-claim-neurons /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/quill-claim-neurons
-  /docs/current/references/quill-cli-reference/quill-generate /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/quill-generate
-  /docs/current/references/quill-cli-reference/quill-get-neuron-info /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/quill-get-neuron-info
-  /docs/current/references/quill-cli-reference/quill-get-proposal-info /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/quill-get-proposal-info
-  /docs/current/references/quill-cli-reference/quill-list-neurons /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/quill-list-neurons
-  /docs/current/references/quill-cli-reference/quill-list-proposals /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/quill-list-proposals
-  /docs/current/references/quill-cli-reference/quill-neuron-manage /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/quill-neuron-manage
-  /docs/current/references/quill-cli-reference/quill-neuron-stake /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/quill-neuron-stake
-  /docs/current/references/quill-cli-reference/quill-public-ids /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/quill-public-ids
-  /docs/current/references/quill-cli-reference/quill-qr-code /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/quill-qr-code
-  /docs/current/references/quill-cli-reference/quill-replace-node-provider-id /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/quill-replace-node-provider-id
-  /docs/current/references/quill-cli-reference/quill-scanner-qr-code /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/quill-scanner-qr-code
-  /docs/current/references/quill-cli-reference/quill-send /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/quill-send
-  /docs/current/references/quill-cli-reference/sps/quill-sps /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps
-  /docs/current/references/quill-cli-reference/sps/quill-sps-balance /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-balance
-  /docs/current/references/quill-cli-reference/sps/quill-sps-configure-dissolve-delay /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-configure-dissolve-delay
-  /docs/current/references/quill-cli-reference/sps/quill-sps-disburse /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-disburse
-  /docs/current/references/quill-cli-reference/sps/quill-sps-disburse-maturity /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-disburse-maturity
-  /docs/current/references/quill-cli-reference/sps/quill-sps-follow-neuron /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-follow-neuron
-  /docs/current/references/quill-cli-reference/sps/quill-sps-get-sale-participation /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-get-sale-participation
-  /docs/current/references/quill-cli-reference/sps/quill-sps-get-swap-refund /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-get-swap-refund
-  /docs/current/references/quill-cli-reference/sps/quill-sps-list-deployed-snses /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-list-deployed-snses
-  /docs/current/references/quill-cli-reference/sps/quill-sps-make-proposal /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-make-proposal
-  /docs/current/references/quill-cli-reference/sps/quill-sps-make-upgrade-canister-proposal /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-make-upgrade-canister-proposal
-  /docs/current/references/quill-cli-reference/sps/quill-sps-neuron-permission /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-neuron-permission
-  /docs/current/references/quill-cli-reference/sps/quill-sps-new-sale-ticket /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-new-sale-ticket
-  /docs/current/references/quill-cli-reference/sps/quill-sps-pay /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-pay
-  /docs/current/references/quill-cli-reference/sps/quill-sps-register-vote /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-register-vote
-  /docs/current/references/quill-cli-reference/sps/quill-sps-split-neuron /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-split-neuron
-  /docs/current/references/quill-cli-reference/sps/quill-sps-stake-maturity /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-stake-maturity
-  /docs/current/references/quill-cli-reference/sps/quill-sps-stake-neuron /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-stake-neuron
-  /docs/current/references/quill-cli-reference/sps/quill-sps-status /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-status
-  /docs/current/references/quill-cli-reference/sps/quill-sps-transfer /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/sps/quill-sps-transfer
-  /docs/current/references/quill-cli-reference/quill-transfer /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/quill-transfer
-  /docs/current/references/quill-cli-reference/quill-update-node-provider /docs/current/developer-docs/developer-tools/cli-tools/quill-cli-reference/quill-update-node-provider
   /docs/current/developer-docs/backend/candid/generating-candid /docs/current/developer-docs/backend/rust/generating-candid
   /docs/current/developer-docs/setup/deploy /docs/current/developer-docs/smart-contracts/deploy/overview
   /docs/current/developer-docs/production/larger-wasm /docs/current/developer-docs/smart-contracts/deploy/larger-wasm
@@ -323,9 +257,11 @@ const redirects = `
   /docs/current/developer-docs/integrations/https-outcalls/https-outcalls-post /docs/current/developer-docs/smart-contracts/advanced-features/https-outcalls/https-outcalls-post
   /docs/current/developer-docs/setup/big-admin /docs/current/developer-docs/developer-tools/cli-tools/big-admin
   /docs/current/developer-docs/backend/subnet-types /docs/current/concepts/subnet-types
-  /docs/current/samples/host-a-website /docs/current/references/samples/hosting/static-website/
   /docs/current/developer-docs/smart-contracts/overview/development-cycle /docs/current/developer-docs/smart-contracts/overview/cube-lifecycle
   /docs/current/developer-docs/web-apps/user-login/big-id/integrate-identity /docs/current/developer-docs/web-apps/user-login/big-id/integrate-big-id
+  /docs/current/developer-docs/samples /samples
+  /docs/current/governance /docs/current/concepts/governance
+  /press-kit /404.html
   `
   .split(/[\r\n]+/)
   .map((line) => line.trim().replace(/^#.*$/, "").trim())

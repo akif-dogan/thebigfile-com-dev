@@ -1,11 +1,11 @@
 ---
-title: Asset certification
+title: Power the Next Generation of AI
 ---
 
 ![](/img/how-it-works/asset-certification.jpg)
 
-# Asset certification
+# Power the Next Generation of AI
 
-Assets are served from BigFile in a tamper-proof manner using certification. Each asset is accompanied by a certificate signed by the entire subnet, allowing the user to verify that the response is correct and authentic, even when communicating with a potentially malicious node.
+The future of AI will be decentralized. Leverage our global, on-demand GPU marketplace to train your machine learning models, run complex data analytics, or render photorealistic graphics without the prohibitive costs of centralized providers. Our ZK-Rollup architecture provides mathematical proof of computation, ensuring the integrity and verifiability of your results.
 
 [Go deeper](/how-it-works/asset-certification/)

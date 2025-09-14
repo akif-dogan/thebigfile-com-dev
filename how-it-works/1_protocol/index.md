@@ -1,3 +1,3 @@
 ---
-title: BigFile Node
+title: BigFile Protocol
 ---

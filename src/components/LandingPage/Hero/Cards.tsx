@@ -38,29 +38,29 @@ export const CardsSection = () => {
     >
       <CardWithImage href="/file-storage" image="/img/home/bureaucracy.webp">
         <div className="tw-heading-7 md:tw-heading-6 mb-2">
-         Scalability and Cost Savings
+         Beyond Censors, Beyond Time
         </div>
         <h2 className="tw-heading-5 md:tw-heading-4 mb-0">
-          File Storage
+         The Immortality of Data
         </h2>
       </CardWithImage>
 
       <CardWithImage href="/ai" image="/img/home/ai.webp">
         <div className="tw-heading-7 md:tw-heading-6 mb-2 whitespace-nowrap">
-          Data for training, analysis, execution
+         The World's Compute at Your Fingertips
         </div>
-        <h2 className="tw-heading-5 md:tw-heading-4 mb-0">Decentralized AI</h2>
+        <h2 className="tw-heading-5 md:tw-heading-4 mb-0">The Collective Superintelligence</h2>
       </CardWithImage>
 
       <CardWithImage href="/docs/current/home" image="/img/home/dev-card.webp">
-        <div className="tw-heading-7 md:tw-heading-6 mb-2">Developer Docs</div>
-        <h2 className="tw-heading-5 md:tw-heading-4 mb-0">Start coding</h2>
+        <div className="tw-heading-7 md:tw-heading-6 mb-2">On a Decentralized Foundation</div>
+        <h2 className="tw-heading-5 md:tw-heading-4 mb-0">Code The Future</h2>
       </CardWithImage>
 
       <CardWithImage href="/community" image="/img/home/events-card.webp">
-        <div className="tw-heading-7 md:tw-heading-6 mb-2">BIG Community</div>
+        <div className="tw-heading-7 md:tw-heading-6 mb-2">Join the Network, Shape the Future</div>
         <h2 className="tw-heading-5 md:tw-heading-4 mb-0">
-          Community Worldwide
+         You Are The Infrastructure
         </h2>
       </CardWithImage>
     </AnimateSpawn>

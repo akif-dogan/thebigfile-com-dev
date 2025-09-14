@@ -122,7 +122,7 @@ function HowItWorks() {
                 How BigFile works
               </h1>
               <p className="tw-lead-sm md:tw-lead mb-0">
-                BigFile is an AI-powered, decentralized blockchain network designed to deliver decentralized, immutable, and scalable data storage solutions. Dive into its cutting-edge technology through open-source repositories, comprehensive video academy sessions, white papers, publications, and detailed technical articles.
+              At its core, BigFile is a two-sided marketplace designed to solve the fundamental inefficiencies of the centralized internet. We've built a DePIN (Decentralized Physical Infrastructure Network) that transforms idle digital resources—disk space and GPU power—into a unified, global cloud.
               </p>
             </div>
           </div>

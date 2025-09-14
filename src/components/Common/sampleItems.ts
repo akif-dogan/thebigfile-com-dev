@@ -73,7 +73,7 @@ export const sampleItems: SampleItem[] = [
         to: "https://github.com/",
       },
       rust: "https://github.com/",
-      docs: "/docs/current/samples/host-a-website",
+      docs: "/docs/current/developer-docs/web-apps/application-frontends/serving-static-assets",
     },
   },
   {

@@ -1,11 +1,11 @@
 ---
-title: Tokenomics
+title: BIG Token Fueling a Decentralized Economy
 ---
 
 ![](/img/how-it-works/tokenomics.600.jpg)
 
-# Tokenomics
+# BIG Token: Fueling a Decentralized Economy
 
-BigFile utilizes a utility token called BIG, which serves various functions on the platform. Users can stake BIG, granting them the right to vote and earn voting rewards. Investors can use BIG to participate in SPS swaps launched on BigFile, which are the initial offerings of the native DAOs. Developers use the BIG token to purchase cycles that power their dapps on BigFile. Additionally, node providers are compensated in BIG for the compute power they contribute to the BigFile platform. 
+The BIG token is the utility lifeblood of the BigFile ecosystem. It's an ERC-20 token on the Polygon network, designed with a sophisticated economic engine to reward holders and build a sustainable liquidity base. In the future BigFile L2, BIG will evolve into the native coin used for paying transaction fees (gas), staking to secure the network, and giving the community governance over the protocol's future.
 
-[Go deeper](/how-it-works/tokenomics/)
+[View Contract on PolygonScan](/how-it-works/tokenomics/)

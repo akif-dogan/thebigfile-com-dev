@@ -30,7 +30,7 @@ export default function Home(): JSX.Element {
         <CardsSection />
         
         <VisionSection>
-          BigFile is an AI-powered decentralized blockchain network engineered to provide decentralized, immutable, and scalable data storage solutions. It is designed to securely host applications, files, and Big Data, while facilitating computations on smart contracts at unparalleled scalability. 
+        BigFile is a DePIN (Decentralized Physical Infrastructure Network) that unites global idle disk space and GPU power. We provide permanent, verifiable data storage and an accessible marketplace for AI computation, building the foundational cloud infrastructure for a decentralized future. 
         </VisionSection>
         <IntroCards />
       </Hero>
@@ -42,29 +42,29 @@ export default function Home(): JSX.Element {
           <Sustainable id="sustainable"></Sustainable>
           <StartBuildingSection
             id="startBuilding"
-            title="Become a Web3 pioneer"
-            body="Start a DAO, create a token, build dapps and host assets with the full stack entirely on-chain."
-            cta="BUILD REAL WEB3"
+            title="Build the Future of Decentralized Infrastructure"
+            body="Leverage our robust DePIN platform to create the next generation of applications. Whether you're building on our Polygon-based token or preparing for our upcoming ZK-Rollup L2, our tools and community are here to support you."
+            cta="Start Building Now"
             ctaLink="/developers"
             cards={[
               {
-                title: "Dev forum",
-                body: "Engage with the BigFile community to shape future features, propose new ideas, and ask questions.",
+                title: "Join Our Developer Community",
+                body: "You're not building alone. Engage with the core BigFile team and fellow developers on Discord and our forums. Ask questions, propose new features, and participate in our upcoming Grants Program to get funding for your ideas.",
                 link: "https://forum.thebigfile.com",
               },
               {
-                title: "Dev docs",
-                body: "Get to know the concepts, architecture and technical breakthroughs that enable the BigFile. Plus step-by-step guides on how to stake your tokens, and more.",
+                title: "Core Concepts",
+                body: "Start here. Understand the fundamental architecture of BigFile, from our dual-marketplace DePIN model for storage and AI, to our long-term vision for a unified ecosystem with the Polygon AggLayer.",
                 link: "/docs/current/home",
               },
               {
-                title: "Sample code",
-                body: "From a simple DEX, to on-chain encrypted storage, NFT minting, and a basic DAO, learn how to build on the BigFile.",
+                title: "Quickstart & SDKs",
+                body: "From interacting with the BIG token on Polygon to preparing your first dApp for our L2 testnet. Find the tools, software development kits (SDKs), and code samples you need to get started in minutes.",
                 link: "/samples",
               },
               {
-                title: "ErisAI",
-                body: "ErisAI Complet Solutions Blockchain AI.",
+                title: "The L2 & ZK-Rollup Tech",
+                body: "Go deeper. Explore the technical specifications of our upcoming Layer 2, built on the Polygon CDK. Learn how ZK-proofs will be used to mathematically verify off-chain storage and computation.",
                 link: "/ai",
               },
             ]}

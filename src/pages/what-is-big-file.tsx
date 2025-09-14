@@ -43,14 +43,14 @@ function WhatIsBigPage() {
                 className="tw-heading-3 md:tw-heading-2 mb-8 md:mb-6"
                 variants={transitions.item}
               >
-                What is the
-                <br className="hidden md:block" /> BigFile
+                The Foundation for a
+                <br className="hidden md:block" /> Decentralized World
               </motion.h1>
               <motion.p
                 className="pb-[15%] sm:pb-0 tw-lead-sm md:tw-lead mb-0"
                 variants={transitions.item}
               >
-                BigFile is an AI-powered decentralized blockchain network engineered to provide decentralized, immutable, and scalable data storage solutions. It is designed to securely host applications, files, and Big Data, while facilitating computations on smart contracts at unparalleled scalability.
+                BigFile is more than a project; it's a paradigm shift. We are building the foundational DePIN (Decentralized Physical Infrastructure Network) layer for the next generation of the internet. Our mission is to solve two of the biggest bottlenecks in the digital world: the centralization of data storage and the prohibitive cost of computational power. We achieve this by uniting a global community of resource providers and creating a single, autonomous, and equitable ecosystem for data and intelligence.
               </motion.p>
             </div>
           </AnimateSpawn>
@@ -66,9 +66,9 @@ function WhatIsBigPage() {
               className="tw-heading-5 sm:tw-heading-4 md:tw-heading-3 mb-8 md:mb-10 text-gradient"
               variants={transitions.item}
             >
-              BigFile is an AI-powered decentralized blockchain network engineered to provide decentralized, immutable, and scalable data storage solutions. It is designed to securely host applications, files, and Big Data, while facilitating computations on smart contracts at unparalleled scalability. 
+              Forget temporary, centralized cloud services. BigFile provides a permanent, censorship-resistant storage layer for your most critical digital assets. By encrypting and distributing your files across a global network of independent providers, we eliminate single points of failure and give you true data sovereignty. It's the ideal solution for hosting dApps, archiving records, and securing your digital identity.
               <br />
-              BigFile offers a revolutionary approach to decentralized data management, enabling individuals and businesses to create an open, borderless digital future free from centralized control.
+              Artificial intelligence requires immense computational power, a resource currently controlled by a few tech giants. BigFile democratizes this by creating a global, on-demand marketplace for GPU power. Train complex AI models, perform intensive data analysis, or render graphics at a fraction of the cost, all powered by a community-driven, decentralized supercomputer.
             </motion.h2>
 
             <motion.p
@@ -116,9 +116,9 @@ function WhatIsBigPage() {
                   alt=""
                   className="h-24"
                 />
-                <h3 className="tw-lead my-3 md:tw-title-sm">File Storage</h3>
+                <h3 className="tw-lead my-3 md:tw-title-sm">Data Sovereignty</h3>
                 <p className="tw-paragraph-sm text-black/60 md:tw-paragraph mb-0">
-                BigFile offers unmatched solutions for long-term data storage, ensuring security, scalability, and immutability. This reduces fees and improves scalability for businesses requiring large-scale storage.
+                Your data should not be a hostage on corporate servers. With BigFile, you are the sole owner of your data.
                 </p>
               </motion.div>
               <motion.div
@@ -130,9 +130,9 @@ function WhatIsBigPage() {
                   alt=""
                   className="h-24"
                 />
-                <h3 className="tw-lead my-3 md:tw-title-sm">Social Platforms</h3>
+                <h3 className="tw-lead my-3 md:tw-title-sm">Mathematical Guarantee</h3>
                 <p className="tw-paragraph-sm text-black/60  mb-0">
-                Social platforms share IP addresses of users with governments. Privacy-focused social apps have centralized servers. In an era where data ownership and censorship are growing concerns, it’s time for social apps to benefit from the immutable, censorship-resistant nature of the permaweb.
+                Mathematically verify that providers are storing your data with ZK-proofs. Don't "hope," "know.
                 </p>
               </motion.div>
               <motion.div
@@ -144,9 +144,9 @@ function WhatIsBigPage() {
                   alt=""
                   className="h-24"
                 />
-                <h3 className="tw-lead my-3 md:tw-title-sm">Decentralized AI</h3>
+                <h3 className="tw-lead my-3 md:tw-title-sm">Accessible AI</h3>
                 <p className="tw-paragraph-sm text-black/60  mb-0">
-                Artificial Intelligence (AI) thrives on vast amounts of data. BigFile addresses the challenges of secure data management, immutability, and provenance, which are critical for AI systems. 
+                Train AI models using the power of a global GPU network. High costs are no longer a barrier to innovation. 
                 </p>
               </motion.div>
               <motion.div
@@ -158,9 +158,9 @@ function WhatIsBigPage() {
                   alt=""
                   className="h-24"
                 />
-                <h3 className="tw-lead my-3 md:tw-title-sm">Gaming & NFTs</h3>
+                <h3 className="tw-lead my-3 md:tw-title-sm">Contribute & Earn</h3>
                 <p className="tw-paragraph-sm text-black/60  mb-0">
-                In the world of NFTs and gaming, creators and players require lasting solutions. Whether you're developing an NFT marketplace, minting atomic assets, or building immersive gaming worlds, BigFile serves as the foundation for tamper-proof, monetized, and easily accessible digital creations.
+                Become the backbone of the ecosystem by providing your idle disk space or GPU power and earn BIG tokens.
                 </p>
               </motion.div>
               <motion.div
@@ -172,9 +172,9 @@ function WhatIsBigPage() {
                   alt=""
                   className="h-24"
                 />
-                <h3 className="tw-lead my-3 md:tw-title-sm">Bureaucracy</h3>
+                <h3 className="tw-lead my-3 md:tw-title-sm">Censorship-Resistant Data</h3>
                 <p className="tw-paragraph-sm text-black/60  mb-0">
-                Verifying, managing, and transmitting complex and time-consuming bureaucratic processes and documents through the BigFile network ensures 100% security while effectively addressing issues of fraud.
+                Because your data is globally distributed, it cannot be blocked or deleted by a single authority. True freedom of speech.
                 </p>
               </motion.div>
               <motion.div
@@ -186,9 +186,9 @@ function WhatIsBigPage() {
                   alt=""
                   className="h-24"
                 />
-                <h3 className="tw-lead my-3 md:tw-title-sm">Blockchain Data</h3>
+                <h3 className="tw-lead my-3 md:tw-title-sm">Interoperability</h3>
                 <p className="tw-paragraph-sm text-black/60  mb-0">
-                Blockchain applications and oracle services must be able to trust that the data they rely on will remain permanently accessible. BigFile indexes and retrieves decentralized data storage on BigFile blockchain, ensuring that data such as transaction histories, price feeds, and oracle inputs are archived and served forever.
+                With the Polygon AggLayer vision, BigFile will serve as a foundational data layer for the entire Web3 ecosystem.
                 </p>
               </motion.div>
             </AnimateSpawn>
@@ -201,17 +201,17 @@ function WhatIsBigPage() {
               className="tw-heading-3 md:tw-heading-60 text-center mb-0"
               variants={transitions.item}
             >
-              Use Cases BigFile
+              Who is BigFile for?
             </motion.h2>
           </div>
           <div className=" container-12 flex flex-col gap-16 md:gap-40 relative pt-20">
             <TranslatedLayout imageUrl="/img/what-is-big-file/node-providers.webp">
               <h2 className="tw-heading-4 md:tw-heading-3 md:mb-6">
-              BigFile Mining
+              For Developers & Innovators
               </h2>
 
               <p className="tw-lead-sm">
-              BigFile mining is a process that enhances the network’s security by providing storage capacity. This system is based on the Storage Proof of Random Access (SPoRA) model, which relies not only on computational power but also on the secure storage of data. BigFile miners provide the necessary physical hardware (such as disk storage capacity) to store data on the network and earn BIG Token rewards in return. The mining process involves not only creating new blocks but also ensuring the integrity and accessibility of existing data, for which miners are regularly rewarded.
+              Build censorship-resistant social media platforms, permanent NFT storage solutions, decentralized websites, or cost-effective AI applications. BigFile's L2 infrastructure and SDKs give you a solid foundation to build the dApp of your dreams.
               </p>
               <p>
                 <Link
@@ -228,10 +228,10 @@ function WhatIsBigPage() {
               reverse={true}
             >
               <h2 className="tw-heading-4 md:tw-heading-3 md:mb-6">
-                Subnet blockchains
+              For Providers & The Community
               </h2>
               <p className="tw-lead-sm">
-              The BigFile combines node machines into highly efficient subnet blockchains, which enhance the capacity for hosting tamperproof smart contracts. BigFile also features a permissionless automated governance system called the Network Nervous System, which directs nodes to join or leave subnets.
+              Put your hardware to work for you. Connect anything from the spare disk space on your home computer to idle GPUs in a data center. BigFile automatically matches these resources with demand, creating a passive income stream for you in BIG tokens.
               </p>
               <p>
                 <Link
@@ -268,7 +268,7 @@ function WhatIsBigPage() {
           <div className="flex flex-col gap-16 md:gap-40">
             <TranslatedLayout imageUrl="/img/what-is-big-file/big-wallet.webp">
               <h3 className="tw-heading-4 md:tw-heading-60 mb-6">
-                BIG ID
+              The Technology Powering BigFile
               </h3>
               <p className="tw-paragraph md:tw-lead-sm mb-6 md:mb-10">
               BIG ID is a platform enabling users to securely store and manage their data on the BigFile network. It offers the ability to permanently store files in a decentralized and reliable manner.
@@ -282,10 +282,10 @@ function WhatIsBigPage() {
             </TranslatedLayout>
             <TranslatedLayout imageUrl="/img/what-is-big-file/sovereign-infrastructure.webp">
               <h3 className="tw-heading-4 md:tw-heading-60 mb-6">
-                Sovereign infrastructure
+              Built on Polygon CDK
               </h3>
               <p className="tw-paragraph md:tw-lead-sm mb-6 md:mb-10">
-              Traditional IT infrastructure—relying on centralized cloud services, closed-source software, and proprietary security hardware—comes with inherent vulnerabilities, such as backdoors for surveillance and kill switches. As a result, governments have often been compelled to compromise their sovereignty over critical digital infrastructure. BigFile addresses this challenge with specialized localized sovereign subnets, tailored for governments, NGOs, and enterprises with unique requirements. This innovative solution provides an unstoppable, secure, and transparent sovereign platform infrastructure, empowering organizations to regain control over the digital foundations of society.
+              BigFile's L2 chain is built on Polygon's most advanced technology, the Chain Development Kit (CDK). This offers us the security and speed of ZK-Rollups and full integration with the massive Polygon ecosystem.
               </p>
               <Link
                 className="link-primary link-with-icon"
@@ -297,10 +297,10 @@ function WhatIsBigPage() {
 
             <TranslatedLayout imageUrl="/img/what-is-big-file/multi-chain.webp">
               <h3 className="tw-heading-4 md:tw-heading-60 mb-6">
-                Native multi-chain
+              The AggLayer Vision
               </h3>
               <p className="tw-paragraph md:tw-lead-sm mb-6 md:mb-10">
-              BigFile is actively working on integrating the Bitcoin Network and native Ethereum. Innovations like cross-chain communication enable the BigFile network to seamlessly transfer, receive, and send BTC and ETH directly across chains, fostering a trustless multi-chain environment. This approach allows end users to transfer crypto assets as effortlessly and quickly as sending a chat message, without relying on bridges or third-party intermediaries.
+              Our future is built on interoperability. Thanks to Polygon's AggLayer, the BigFile Chain will communicate seamlessly with other L2s, creating a unified liquidity and data market, thus solving Web3's isolated islands problem.
               </p>
               <p className="mb-3">
                 <Link

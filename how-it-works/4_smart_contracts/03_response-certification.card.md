@@ -1,11 +1,11 @@
 ---
-title: Certified variables
+title: The AI & Compute Cloud, Reimagined
 ---
 
 ![](/img/how-it-works/certified-variables.webp)
 
-# Certified variables
+# The AI & Compute Cloud, Reimagined
 
-Cube smart contracts can declare variables as certified. When these variables are set, they automatically receive a Merkle tree certificate, signed by the BigFile blockchain. This allows anyone to verify the authenticity of this data using the BigFile public key.
+Don't just use AI—own the infrastructure that powers it. Our decentralized marketplace allows you to rent raw compute power on-demand from a global network of GPUs, making model training and complex analysis accessible and affordable.
 
 [Go deeper](/how-it-works/response-certification/)

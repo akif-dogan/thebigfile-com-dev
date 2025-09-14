@@ -98,30 +98,30 @@ const SmallCard: React.FC<{
 
 const cardsData: CardData[] = [
   {
-    title: "Decentralized Data Storage",
+    title: "Sovereign Storage for a New Era",
     description:
-      "BigFile offers the perfect solution for permanent, secure, and scalable file storage. With immutable data, bundling for efficient uploads, and self-sovereignty through decentralized gateways, BigFile provides a long-term answer to your file storage needs—whether for business, personal use, or critical data preservation.",
+      "BigFile offers the ultimate solution for secure and permanent file storage. Your data is encrypted, sharded, and distributed across a global network of independent providers who are rewarded in BIG tokens. This architecture provides unparalleled resilience against censorship and data loss, making it the perfect long-term home for everything from personal files to critical business data and dApp assets.",
     image: "/img/features/serve-web.webp",
     href: null,
     refText: null,
     imageSide: "right",
   },
   {
-    title: "Oracle and Blockchain Data",
+    title: "The On-Demand AI & Compute Marketplace",
     description:
-      "Cross-Chain and Modular Integration: As blockchain ecosystems become more interconnected, BigFile provides robust cross-chain functionality, enabling oracles and DeFi applications to seamlessly exchange data with Ethereum, Solana, and other major chains. Its modular design ensures smooth integration with diverse blockchain systems, granting access to BigFile’s data while delivering top-tier performance and security.",
+      "BigFile unlocks the world's latent computational power. Our DePIN marketplace connects a global network of GPU providers with developers and researchers, offering high-performance computing at a fraction of the cost of centralized services. Train your AI models, render complex graphics, or run scientific simulations on a scalable, community-powered supercomputer.",
     image: "/img/features/no-oracles-image.webp",
     href: "/",
     refText: null,
     imageSide: "left",
   },
   {
-    title: "Sites and Apps",
+    title: "Unstoppable Websites & dApps",
     description:
-      "Web applications and static sites can be seamlessly deployed to the permaweb, ensuring they remain accessible and unaltered indefinitely for a low, one-time hosting fee. This solution is ideal for decentralized applications, archive websites, educational resources, and legacy projects, offering long-term availability without the burden of ongoing maintenance costs.",
+      "Host your entire application, from frontend to backend, on BigFile's resilient, decentralized infrastructure. Say goodbye to de-platforming, server downtime, and exorbitant hosting fees. Whether it's a DAO governance portal, a DeFi application, or a censorship-resistant blog, BigFile provides the permanent foundation for a truly decentralized web.",
     image: "/img/features/seo-image.webp",
     href: "https://forum.thebigfile.com/t/sites-and-apps-management-in-bigfile-blockchain-network/42",
-    refText: "Read the Forum",
+    refText: "Learn to Host on BigFile",
     imageSide: "right",
   },
   {
@@ -148,34 +148,34 @@ const cardsData: CardData[] = [
 
 const smallCardsData = [
   {
-    title: "Permanent Data Storage",
+    title: "L2 ZK-Rollup Architecture",
     description:
-      "BigFile introduces a pay once, enjoy forever model, enabling users to securely store data permanently without recurring fees. This decentralized and permanent storage solution eliminates the need for subscriptions or renewals, making it ideal for archiving data, safeguarding legal documents, preserving academic research, and storing personal or corporate files long-term.",
+      "BigFile operates as a dedicated Layer 2 appchain, built with the Polygon CDK. We leverage the power of ZK-Rollups to bundle thousands of transactions into a single proof, which is then secured by the Ethereum mainnet. This gives us the best of both worlds: extreme scalability and low fees of an L2, with the ultimate security of Ethereum.",
     href: "/how-it-works#Chain-key-technology",
   },
   {
-    title: "Blockweave Structure",
-    description: `BigFile leverages the innovative Blockweave structure, a distributed data storage mechanism inherited and further enhanced from Arweave. Unlike traditional blockchain architectures that require nodes to verify the entire chain, Blockweave optimizes this process by requiring nodes to validate only specific parts of the network. This approach significantly reduces resource consumption and improves the efficiency of data storage and retrieval processes.`,
+    title: "The DePIN Economic Engine",
+    description: `Our protocol is powered by a Decentralized Physical Infrastructure Network (DePIN). We incentivize a global, permissionless network of providers to contribute disk space and GPU power. This creates a two-sided marketplace where community-owned resources replace expensive, centralized data centers, fostering a more equitable and efficient digital economy.`,
     href: "",
   },
   {
-    title: "Proof of Access (PoA)",
-    description: `Proof of Access (PoA) is the core consensus mechanism that powers the BigFile network. Designed to ensure data integrity and security, PoA validates the storage and accessibility of data across the network. Unlike traditional Proof of Work (PoW) systems that prioritize computational power for mining new blocks, PoA requires miners to prove they can access specific data from previous blocks in the network, thus guaranteeing the continuity and integrity of the stored data.`,
+    title: "Verifiable Off-Chain Compute",
+    description: `How do you trust an anonymous node to run your AI model correctly? You don't have to. BigFile uses the power of ZK-proofs to allow compute providers to mathematically prove they executed a specific task correctly. This principle of verifiable computation is the core of our trustless AI marketplace.`,
     href: "",
   },
   {
-    title: "Gateway Architecture",
-    description: `BigFile’s Gatewsay Architecture introduces a new paradigm for scalability and specialization in decentralized networks. Inspired by traditional cloud computing’s horizontal scaling model, subnets allow the network to grow by creating smaller, specialized blockchains within the broader BigFile ecosystem. Each gateway operates semi-independently, while still being interconnected with the main BigFile chain, enabling tailored use cases and optimized performance.`,
+    title: "Upgradeable Governance w/Timelock",
+    description: `BigFile is built for the future. Our smart contracts use the UUPS proxy pattern, allowing them to be securely upgraded. All administrative powers are held by a standard OpenZeppelin TimelockController, meaning any critical change is subject to a public time delay, ensuring full transparency and community oversight.`,
     href: "",
   },
   {
-    title: "Neural Mining",
-    description: `BigFile's innovative Neural Mining mechanism combines artificial intelligence (AI) and blockchain technology to create an advanced ecosystem that goes beyond traditional data storage and verification. Neural Mining leverages GPU-based mining infrastructure to provide high computational power for AI applications and the operation of large language models (LLMs) in a decentralized framework.`,
+    title: "Autonomous Tokenomics",
+    description: `The BIG token contract is a self-sustaining economic engine. A 2% transaction tax automatically funds a perpetual liquidity pool (Auto-Liquidity) and distributes passive income to holders in the form of USDC (USDC Reflection). This system is designed to reward long-term holders and ensure market stability without manual intervention.`,
     href: "/decentralized-ai",
   },
   {
-    title: "Energy Efficiency & Sustainability",
-    description: `BigFile adopts an eco-conscious approach by integrating energy-optimized technologies and sustainable infrastructure. Building upon the energy-efficient Blockweave structure inherited from Arweave, BigFile enables both individuals and businesses to minimize their environmental impact.`,
+    title: "Advanced MEV & Oracle Protection",
+    description: `The protocol's treasury is actively protected from on-chain manipulation. Our automated DEX swaps are shielded from sandwich attacks by integrating an external Price Oracle and enforcing dynamic, strict slippage controls. This ensures that funds generated from taxes are used with maximum efficiency for the benefit of the ecosystem.`,
     href: "/capabilities/sustainability",
   },
 ];
@@ -209,7 +209,7 @@ function FeaturesPage() {
                 className="tw-lead-sm md:tw-lead mb-0"
                 variants={transitions.item}
               >
-                BigFile is an AI-powered decentralized blockchain network engineered to provide decentralized, immutable, and scalable data storage solutions. It is designed to securely host applications, files, and Big Data, while facilitating computations on smart contracts at unparalleled scalability.
+                BigFile is a DePIN (Decentralized Physical Infrastructure Network) architected to be the foundational cloud infrastructure for a decentralized future. We unite global idle disk space and GPU power to create a two-sided marketplace, offering permanent, verifiable data storage and an accessible hub for on-demand AI computation.
               </motion.p>
             </div>
           </div>
@@ -234,13 +234,13 @@ function FeaturesPage() {
               className="tw-heading-3 md:tw-heading-60 mb-3 md:mb-6"
               variants={transitions.item}
             >
-              Permanent and Decentralized
+              Where Data Meets Intelligence
             </motion.h2>
             <motion.p
               className="tw-lead-sm md:tw-lead mb-0"
               variants={transitions.item}
             >
-              BigFile integrates cutting-edge innovations to revolutionize web experiences with the power of blockchain and AI.
+              We are pioneering the convergence of decentralized storage, high-performance computing, and verifiable AI. BigFile is not just storing data—it's creating an ecosystem where data can be securely stored, processed, and utilized in a trustless, community-owned environment.
             </motion.p>
           </div>
         </AnimateSpawn>
@@ -294,13 +294,13 @@ function FeaturesPage() {
                 variants={transitions.item}
                 className="tw-heading-4 md:tw-heading-3 mb-4 "
               >
-                BigDrive — The On-chain Permanent File Storage
+                Become a Provider, Power the Network
               </motion.h3>
               <motion.p
                 className="tw-paragraph md:tw-lead-sm  mb-6 text-white-80"
                 variants={transitions.item}
               >
-                Streamline your digital world with BigDrive: the app that simplifies file management and inspires creativity with its pay-once, enjoy-forever model. Rethink your approach to cloud storage—because true decentralized demands a new way forward.
+                You are the backbone of the new decentralized internet. By contributing your idle disk space or GPU power, you do more than just support the network—you become a part of it. Our protocol automatically matches your resources with user demand, allowing you to earn a passive income stream in BIG tokens. Participation is permissionless and setup is simple.
               </motion.p>
               <motion.p className="mb-0" variants={transitions.item}>
                 <Link
@@ -308,7 +308,7 @@ function FeaturesPage() {
                   className="tw-heading-6 flex gap-2 items-center text-white hover:text-white-60 hover:no-underline"
                 >
                   <RightPointer className="w-6 h-6"></RightPointer>
-                  Get Started
+                  Join as a Provider
                 </Link>
               </motion.p>
             </div>
@@ -318,13 +318,13 @@ function FeaturesPage() {
               variants={transitions.item}
               className="tw-heading-4 md:tw-heading-3 mb-4 "
             >
-              Decentralized Social Platforms
+              Built on a Foundation of Proof
             </motion.h3>
             <motion.p
               className="tw-paragraph md:tw-lead-sm text-black-60 mb-12"
               variants={transitions.item}
             >
-              Most social platforms share users' IP addresses with governments, privacy-focused apps rely on centralized servers, and few grant users full ownership of their data or the freedom to transfer it elsewhere. In an age where data ownership and censorship are critical concerns, it's time for social applications to harness the immutable and censorship-resistant power of decentralized technology.
+              Trust is earned through mathematical certainty. BigFile is a Layer 2 ZK-Rollup built with the Polygon CDK. This means every operation—from proving a file is stored to verifying an AI computation—is secured by cryptographic ZK-proofs and anchored to the security of Ethereum. We chose this technology to provide our users with unparalleled security, scalability, and transparency.
             </motion.p>
 
             
@@ -367,13 +367,13 @@ function FeaturesPage() {
               variants={transitions.item}
               className="tw-heading-4 md:tw-heading-3 mb-4 "
             >
-              Fully On-Chain: Say Goodbye to the Cloud
+              Verifiable Data Economies
             </motion.h3>
             <motion.p
               className="tw-paragraph md:tw-lead-sm text-black-60 mb-0"
               variants={transitions.item}
             >
-              BigFile delivers a full-stack solution for developers to build decentralized online services and games. By operating entirely on-chain without any reliance on centralized cloud providers, BigFile ensures true decentralization, enhanced security, and resilience against single points of failure.
+              BigFile enables a new paradigm of data-driven smart contracts. Build decentralized science (DeSci) platforms where research data is stored permanently and computations are verified by ZK-proofs. Create transparent supply chain solutions or verifiable credential systems. When data integrity is mathematically guaranteed, the possibilities are endless.
             </motion.p>
           </SingleCard>
 
@@ -382,13 +382,13 @@ function FeaturesPage() {
               variants={transitions.item}
               className="tw-heading-4 md:tw-heading-3 mb-4 "
             >
-              Web3 Gaming and NFTs
+              The Future of Gaming & Digital Assets
             </motion.h3>
             <motion.p
               className="tw-paragraph md:tw-lead-sm text-black-60 mb-4"
               variants={transitions.item}
             >
-              In the world of NFTs and gaming, creators and players demand permanence and reliability. BigFile provides the foundation for unruggable digital assets, offering unparalleled solutions for NFT storage and gaming infrastructure. Whether you're building an NFT marketplace, minting atomic assets, or creating immersive gaming worlds, BigFile ensures tamper-proof, cost-effective, and accessible digital creations.
+              In the world of Web3 gaming and NFTs, permanence is everything. BigFile provides the foundational layer for truly ownable digital assets. Ensure your game's assets, digital art, or virtual worlds are stored forever, independent of any single server or company. Build immersive gaming experiences where in-game items are truly yours, permanently.
             </motion.p>
 
             <motion.p className="mb-0" variants={transitions.item}>
@@ -397,7 +397,7 @@ function FeaturesPage() {
                 className="tw-heading-6 flex gap-2 items-center"
               >
                 <RightPointer className="w-6 h-6"></RightPointer>
-                More on the Web3 & NFTs
+                More on Web3 Gaming
               </Link>
             </motion.p>
           </SingleCard>
@@ -425,13 +425,13 @@ function FeaturesPage() {
               className="tw-heading-3 md:tw-heading-60 mb-3 md:mb-6"
               variants={transitions.item}
             >
-              Streamlining Bureaucracy with BigFile
+              The Future of Verifiable Documents & Agreements
             </motion.h2>
             <motion.p
               className="tw-lead-sm md:tw-lead mb-0"
               variants={transitions.item}
             >
-              BigFile is developing a blockchain and AI-powered solution for the increasingly complex bureaucratic processes. Bureaucracy is a broad field with various categories, and instead of creating separate solutions for each, BigFile offers a single, comprehensive solution aimed at eliminating the complexities of bureaucratic procedures.
+              Bureaucracy is fundamentally a problem of trust and data integrity. Traditional systems rely on slow, expensive, and fallible intermediaries to verify documents and agreements. BigFile replaces this outdated model with a decentralized foundation for truth. By leveraging our permanent storage network and ZK-Rollup technology, we provide a single, universal source of truth for critical records, accessible anywhere and verifiable by anyone.
             </motion.p>
           </div>
         </AnimateSpawn>
@@ -454,13 +454,22 @@ function FeaturesPage() {
               className="tw-heading-4 md:tw-heading-3 mb-4 "
               variants={transitions.item}
             >
-              Streamlining Bureaucracy with BigFile
+              Trust, Mathematically Guaranteed
             </motion.h3>
             <motion.p
               className="tw-paragraph md:tw-lead-sm mb-6 "
               variants={transitions.item}
             >
-              The AI-supported BigFile Blockchain Project aims to eliminate the challenging and time-consuming paperwork and bureaucratic transactions between countries, institutions, and individuals. It is a document management and transfer solution specifically developed for a decentralized blockchain, designed to simplify your life by combining the power of artificial intelligence and blockchain technologies.
+              The BigFile protocol provides the tools to build a new generation of transparent and efficient bureaucratic systems.
+              <br />
+              <br />
+              <b>Immutable Legal Contracts:</b> Execute and store legal agreements as smart contracts whose integrity is permanently secured on-chain.
+              <br />
+              <b>Verifiable Credentials:</b> Issue academic diplomas, professional certifications, or licenses as tamper-proof digital assets.
+              <br />
+              <b>Transparent Supply Chains:</b> Track goods and verify documentation at every step of the supply chain with undeniable, timestamped records. 
+              <br />
+              BigFile's technology ensures that the authenticity of any document or transaction can be proven with mathematical certainty, eliminating fraud and streamlining processes.
             </motion.p>
             <motion.p className="mb-0" variants={transitions.item}>
               <Link
@@ -468,7 +477,7 @@ function FeaturesPage() {
                 className="tw-heading-6 flex gap-2 items-center text-white hover:text-white-60 hover:no-underline"
               >
                 <RightPointer className="w-6 h-6"></RightPointer>
-                How Bureaucracy integration works?
+                Explore Verifiable Solutions
               </Link>
             </motion.p>
           </SplitCard>
@@ -500,7 +509,7 @@ function FeaturesPage() {
               className="tw-lead-sm md:tw-lead mb-0"
               variants={transitions.item}
             >
-              Countless innovations in cryptography and distributed computing were essential to create the first true BigFile. Here are a few of our favorites.
+              BigFile is not built on a fork of legacy technology. Our protocol is engineered from the ground up using a modern, modular stack to deliver unparalleled security, scalability, and economic sustainability. Below are the core technical innovations that make the BigFile ecosystem possible.
             </motion.p>
           </div>
         </AnimateSpawn>
@@ -547,13 +556,13 @@ function FeaturesPage() {
               className="tw-heading-3 md:tw-heading-60 mb-3 md:mb-6"
               variants={transitions.item}
             >
-              Explore the Blockchain of Tomorrow
+              Build the Unstoppable Apps of Tomorrow
             </motion.h2>
             <motion.p
               className="tw-lead-sm md:tw-lead mb-6"
               variants={transitions.item}
             >
-              Gain a deeper understanding of the BigFile blockchain with comprehensive technical articles detailing the BigFile Protocol and its groundbreaking features. Explore open-source repositories, in-depth technical documentation, and a vast array of resources to empower your development journey.
+              BigFile is more than just a protocol—it's a launchpad for innovation. Dive into our architecture to see how our Layer 2 ZK-Rollup, powered by Polygon CDK, provides the scalable and secure foundation for the next generation of DePIN and AI applications. Explore our open-source code, detailed technical documentation, and discover the tools you need to start building today.
             </motion.p>
             <motion.p
               className="tw-lead-sm md:tw-lead mb-0"
