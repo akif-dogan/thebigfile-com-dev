@@ -17,13 +17,13 @@ const Hero = forwardRef<HTMLDivElement, {}>((_, ref) => {
             variants={transitions.item}
             className="tw-heading-3 mb-2 w-5/6 md:tw-heading-2 md:mb-6 md:w-7/12"
           >
-            File Storage
+            Your Data, Stored Forever. Truly Yours.
           </motion.h1>
           <motion.p
             variants={transitions.item}
             className="tw-lead-sm md:tw-lead md:w-7/12 mb-0"
           >
-            Permanent data storage on the BigFile blockchain guarantees that public and private documents, media, and other digital assets remain undeletable. This makes it an ideal solution for preserving legal, medical, historical records, or any data that must never be lost.
+            Welcome to the future of data storage. BigFile provides a decentralized, permanent, and mathematically verifiable storage layer for your most important digital assets. Say goodbye to recurring fees, censorship, and the risk of data loss. This is data sovereignty, delivered.
           </motion.p>
         </AnimateSpawn>
       </div>

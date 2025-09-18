@@ -31,40 +31,38 @@ const MotionLink = motion(Link);
 const trustCards = [
   {
     imageSrc: "/img/decentralized-ai/trust-icon-1.svg",
-    imageAlt: "Tamper-proofness icon",
-    title: "Tamper-proof",
+    imageAlt: "Verifiable & Trustless icon",
+    title: "Verifiable & Trustless",
     description:
-      "Computation is replicated across multiple nodes and validated by consensus. There is no single point of trust.",
+      "We replace blind trust with mathematical certainty. Using ZK-Rollup technology, every critical operation, from a file being stored to an AI job being executed, is backed by a verifiable cryptographic proof. You don't need to trust providers; you only need to trust the math.",
   },
   {
     imageSrc: "/img/decentralized-ai/trust-icon-2.svg",
-    imageAlt: "Unstoppability icon",
-    title: "Unstoppable",
+    imageAlt: "Extremely Scalable icon",
+    title: "Extremely Scalable",
     description:
-      "Smart contracts are censorship resistant as they are not controlled by a single entity or legislation.",
+      "By operating as a dedicated Layer 2 on Polygon, BigFile offloads computation from the congested Ethereum mainnet. This allows our network to handle thousands of transactions per second at a fraction of the cost, enabling high-volume use cases that are impossible on a Layer 1.",
   },
   {
     imageSrc: "/img/decentralized-ai/trust-icon-3.svg",
-    imageAlt: "Autonomy icon",
-    title: "Autonomous",
+    imageAlt: "Community-Owned DePIN icon",
+    title: "Community-Owned DePIN",
     description:
-      "Smart contracts can be made immutable turning them into a permanent compute unit in cyberspace.",
+      "BigFile is not owned by a corporation; it's powered by its users. Our DePIN (Decentralized Physical Infrastructure Network) model allows anyone, anywhere to contribute their idle hardware (disk space or GPUs) and become a foundational part of the network, earning rewards for their service.",
   },
   {
     imageSrc: "/img/decentralized-ai/trust-icon-4.svg",
-    imageAlt: "Scalability icon",
-    title: "Scalable",
+    imageAlt: "Sustainable Tokenomics icon",
+    title: "Sustainable Tokenomics",
     description:
-      "BigFile aims to give smart contracts near native performance and scalability. Currently, smart contracts can execute billions of instructions per message and use 4GiB of the main memory and 400GiB of stable memory. The future vision is to give smart contracts access to AI hardware such as GPUs.",
+      "The BIG token is designed for long-term health. A small transaction tax on large trades perpetually funds the protocol's liquidity pool (Auto-Liquidity) and distributes passive income in USDC to holders (USDC Reflection), creating a self-sustaining economic engine.",
   },
   {
     imageSrc: "/img/decentralized-ai/trust-icon-5.svg",
-    imageAlt: "Expressiveness icon",
-    title: "Expressive",
+    imageAlt: "Interoperable by Design icon",
+    title: "Interoperable by Design",
     description:
-      "The virtual machine of BigFile is WebAssembly that has a growing ecosystem of languages, tools, and libraries. This allows BigFile developers to use open source projects such as ",
-    link: "https://github.com/sonos/tract",
-    linkText: "Sonos Tract AI inference engine",
+      "BigFile will not be an isolated island. By connecting to Polygon's Aggregation Layer (AggLayer), our network will seamlessly share liquidity and communicate with hundreds of other chains, positioning BigFile as a foundational data and compute layer for the entire Web3 ecosystem. ",
   },
 ];
 
@@ -159,15 +157,14 @@ function AIPage() {
               className="tw-heading-3 md:tw-heading-2 mb-2 md:mb-6 md:w-8/10 "
               variants={transitions.item}
             >
-              Hello, <br /> Decentralized AI
+              The Global Supercomputer <br /> Owned by Everyone.
             </motion.h1>
             <div className="relative  md:w-5/10">
               <motion.p
                 className="tw-lead-sm md:tw-lead mb-8"
                 variants={transitions.item}
               >
-                Train and run AI models as smart contracts fully onchain to
-                benefit from the security, resilience, and computation power of the BigFile blockchain.
+                BigFile liberates artificial intelligence from centralized data centers. We are building a global, on-demand marketplace for GPU power, making high-performance computing accessible, affordable, and verifiable for all.
               </motion.p>
               {/* <MotionLink
                 className="button-white"
@@ -184,7 +181,7 @@ function AIPage() {
             <div className="absolute w-10/12 sm:w-5/12 left-1/2 translate-y-1/2 -translate-x-[50%] bottom-1/2 md:left-0 md:absolute md:w-5/12 md:bottom-0 md:translate-x-[130%] md:translate-y-2/12">
               <img
                 src="/img/decentralized-ai/aiheader.svg"
-                alt="Start building on Internet Identity"
+                alt="Start building on BigFile"
                 className="w-full max-w-none"
                 loading="lazy"
               />
@@ -210,25 +207,16 @@ function AIPage() {
                   className="tw-heading-4 md:tw-heading-60 mb-6 md:mb-12"
                   variants={transitions.item}
                 >
-                  The black-box AI problem
+                  The Walled Gardens of AI
                 </motion.h3>
                 <motion.p className="text-2xl mb-0 ">
-                  As companies race to build AI-powered products, they leave
-                  users no option but to blindly trust the underlying AI models.
-                  Their behavior is non-deterministic and not verifiable. Worse,
-                  {" "}<Link
-                    className="font-bold"
-                    to="https://twitter.com/AnthropicAI/status/1745854907968880970"
-                    target="_blank"
-                  >
-                    Research shows
-                  </Link>{" "}
-                  that it is possible to tamper with AI models in an
-                  undetectable way. Users have no visibility into how their data
-                  is used and how AI models produces responses.
-                  Since AI models behave like black boxes to users, building
-                  trustworthy AI models is a difficult challenge that can be
-                  solved by training and running the models on BigFile.
+                Today, immense computational power is a privilege, locked away by a few tech giants. This creates critical bottlenecks:
+                <br />
+                <b>Prohibitive Costs:</b> Renting high-end GPUs is incredibly expensive, stifling innovation for startups and researchers.
+                <br />
+                <b>Limited Access:</b> Resources are scarce, leading to long waiting lists and geographic restrictions.
+                <br />
+                <b>Centralized Control:</b> A handful of corporations dictate the price, availability, and terms of use for the world's most critical resource.
                 </motion.p>
               </div>
             </aside>
@@ -236,7 +224,7 @@ function AIPage() {
         </section>
         <section className="container-12  relative mt-24 mb-24 sm:mt-52 md:mt-40">
           <motion.h4 className="tw-heading-4 md:tw-heading-60 text-gradient text-left md:text-center my-12  md:mb-16 md:w-5/10 md:mx-auto">
-            What is required to establish trust?
+          What is required to establish trust?
           </motion.h4>
           <AnimateSpawn
             className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-5"
@@ -251,12 +239,9 @@ function AIPage() {
                 alt=""
                 className="h-24"
               />
-              <h3 className="tw-lead my-3 md:tw-title-sm ">Model integrity</h3>
+              <h3 className="tw-lead my-3 md:tw-title-sm ">Verifiable Computation with ZK-Proofs</h3>
               <p className="tw-paragraph-sm text-black/60 md:tw-paragraph mb-0">
-                Users need guarantees that their AI prompts are answered by a
-                model that has not been tampered with. Traditional techniques
-                for assessing the integrity of software, such as source code
-                analysis, are infeasible for AI models due to their large sizes.
+              How can you be sure your AI job was executed correctly and not manipulated? We replace blind trust with mathematical certainty. BigFile's ZK-Rollup architecture allows compute providers to generate a cryptographic proof (a ZK-proof) that a specific computation was performed correctly, without revealing the underlying data. This is "Proof of Computation," delivered.
               </p>
             </motion.div>
             <motion.div
@@ -269,14 +254,10 @@ function AIPage() {
                 className="h-24"
               />
               <h3 className="tw-lead my-3 md:tw-title-sm">
-                Data confidentiality
+              End-to-End Encryption & Privacy
               </h3>
               <p className="tw-paragraph-sm text-black/60  mb-0">
-                During training and operation, AI models handle sensitive data,
-                like medical inquiries or corporate secrets. Users need
-                guarantees that their information remains secure and doesn't
-                leak to the model creators, other users, or AI infrastructure
-                providers.
+              Your data and AI models are yours alone. All data is encrypted on the client-side before it is sent to the BigFile network for storage or computation. Providers only interact with encrypted data fragments, meaning they have zero knowledge of the content. You are the sole holder of the keys.
               </p>
             </motion.div>
             <motion.div
@@ -288,12 +269,9 @@ function AIPage() {
                 alt=""
                 className="h-24"
               />
-              <h3 className="tw-lead my-3 md:tw-title-sm">Availability</h3>
+              <h3 className="tw-lead my-3 md:tw-title-sm">Unstoppable, Censorship-Resistant Infrastructure</h3>
               <p className="tw-paragraph-sm text-black/60  mb-0">
-                AI models will become essential for business processes and
-                societies in general. As with every critical infrastructure,
-                solutions must be found to keep AI models resilient to
-                interruptions and to protect them from censorship.
+              Centralized servers can be shut down. BigFile cannot. Our DePIN (Decentralized Physical Infrastructure Network) is powered by thousands of independent nodes across the globe. This distributed architecture ensures there is no single point of failure, providing unparalleled resilience and guaranteeing that your data and applications remain available, always.
               </p>
             </motion.div>
           </AnimateSpawn>
@@ -303,26 +281,16 @@ function AIPage() {
           <section className="bg-infinite text-white pt-6 pb-20" ref={heroRef}>
             <article className="container-10 mt-12 md:mt-20">
               <h3 className="tw-heading-4 md:tw-heading-60  text-left md:text-center text-gradient-purple mb-0 md:w-5/10 md:mx-auto">
-                Making AI trustworthy
+               A Permissionless Compute Marketplace
               </h3>
               <aside className="container-10 mt-12 md:mt-32 md:flex md:items-center !pl-0	!pr-0">
                 <div className="md:w-1/3">
                   <motion.h3 className="tw-heading-5 md:tw-heading-4">
-                    Decentralized AI
+                   A Global Supercomputer, Owned by Everyone.
                   </motion.h3>
                   <motion.p className="text-2xl mb-0 ">
-                    <motion.span className="font-bold">ErisAI </motion.span>
-                    involves running AI training and inference as smart
-                    contracts onchain, which addresses AI’s trust issues. Users
-                    can verify the inputs to the models they utilize, reducing
-                    the need to trust them blindly. However, AI training and
-                    inference are highly resource-intensive, and the limited
-                    computational capabilities of traditional blockchain
-                    networks often fall short. In contrast, the advanced design
-                    of the BigFile successfully marries
-                    the security of smart contracts with the robust
-                    computational demands of AI. The following properties of BigFile
-                    make decentralized and trustworthy AI possible.
+                    <motion.span className="font-bold">BigFile </motion.span>
+                    liberates artificial intelligence from centralized data centers. We are building a global, on-demand marketplace for GPU power, making high-performance computing accessible, affordable, and verifiable for all. By connecting a permissionless network of providers with developers and researchers, we power the next generation of AI innovation, together.
                   </motion.p>
                 </div>
                 <div className="md:w-2/3 relative mt-6  md:mt-64 md:mb-64">
@@ -348,108 +316,31 @@ function AIPage() {
             </article>
           </section>
         </AnimateSpawn>
-        <AnimateSpawn
-          el={motion.section}
-          variants={transitions.container}
-          className="mt-20 md:mt-40"
-        >
-          <div className="container-10 mb-10">
-            <div className="flex flex-col md:flex-row gap-6 items-center">
-              <motion.h4
-                className="tw-heading-4 md:tw-heading-60 mb-0 text-gradient"
-                variants={transitions.item}
-              >
-                AI Models on BigFile Today
-              </motion.h4>
-              <div>
-                See a series of demos how the BigFile has the
-                capability of running AI in a smart contract.
-                <div className="mt-6">
-                  <Link
-                    className="link-primary link-with-icon"
-                    href="https://www.youtube.com/"
-                  >
-                    Watch the playlist <LinkArrowUpRight></LinkArrowUpRight>
-                  </Link>
-                </div>
-              </div>
-            </div>
 
-            <AnimateSpawn
-              className="container-10 mt-12 mb-5 !p-0"
-              el={motion.section}
-              variants={transitions.container}
-            >
-              <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-                <motion.div
-                  variants={transitions.item}
-                  className="col-span-1 md:col-span-2 mb-10"
-                >
-                  
-                </motion.div>
-              </div>
-            </AnimateSpawn>
-            <AnimateSpawn
-              variants={transitions.item}
-              className="flex flex-col md:flex-row gap-6 md:gap-24 items-center"
-            >
-              <div>
-                <h3 className="tw-heading-5 md:tw-heading-4 mb-6">
-                  Experience the demo version
-                </h3>
-                <p className="tw-paragraph md:tw-lead-sm mb-6 text-black/60">
-                  Check out the open-source repo on GitHub and tryout the AI
-                  demo by yourself.
-                </p>
-                <p className="flex flex-col md:flex-row">
-                  <MotionLink
-                    variants={transitions.item}
-                    className="button-outline"
-                    href="https://github.com/thebigfilecom/examples/tree/main/rust/image-classification"
-                  >
-                    GO TO GITHUB REPO
-                  </MotionLink>
-                  <Link
-                    href="/docs/current/developer-docs/ai/ai-on-chain"
-                    className="mt-6 md:mt-0 link-primary link-with-icon items-center ml-0 md:ml-6"
-                  >
-                    More about ErisAI in the Dev docs <LinkArrowRight />
-                  </Link>
-                </p>
-              </div>
-              <div className="w-full md:w-auto rounded-2xl">
-                <CodeBlockString showLineNumbers language="rust">
-                  {`// Setup:
-let proto: ModelProto =     
-ModelProto::decode(onnx_file)?;    
-let model = tract_onnx::onnx()     
-    .model_for_proto_model(&proto)?        
-    .into_optimized()?
-    .into_runnable()?;
-  
-// Inference:
-let result = model.run(tvec!
-(Tensor::from(tensor).into()))?; `}
-                </CodeBlockString>
-              </div>
-            </AnimateSpawn>
-          </div>
-        </AnimateSpawn>
+
+           
+
+
+
+
         <section className="container-10 mt-12 md:mt-44 md:mb-44">
           <AnimateSpawn
             className="mt-16 md:mt-24 mb-60 md:mb-24 relative"
             variants={transitions.container}
           >
             <motion.h4 className="tw-heading-4 md:tw-heading-60 text-gradient ">
-              What the future holds
+            Building the Autonomous AI Cloud
             </motion.h4>
             <motion.p className="mt-6 mb-4 md:mb-6 md:w-[55%]">
-              Blockchain AI is still in its early stages. Currently, smart
-              contracts can run small AI models like ImageNet for onchain image
-              classification. Short-term improvements will decrease latency and
-              support larger models, while the long-term goal is to enable smart
-              contracts to perform AI computations on GPUs, allowing both
-              training and inference of large models fully onchain.
+            The launch of our on-demand compute marketplace is just the beginning. The future of BigFile is a fully autonomous, community-governed ecosystem for artificial intelligence. Our roadmap includes:
+            <br />
+            <b>Verifiable AI Models:</b> Implementing advanced ZK-proofs to not only verify computation but also the integrity of the specific AI model being used.
+            <br />
+<b>Protocol-Governed Model Libraries:</b> Creating a decentralized library where developers can submit their own open-source AI models for others to use, with revenue-sharing managed by the protocol.
+            <br />
+<b>Seamless Interoperability:</b> Leveraging the Polygon AggLayer to allow smart contracts on any chain to natively call and utilize the AI compute power of the BigFile network.
+<br />
+<b>Full DAO Governance:</b> Progressively transitioning all control of the AI marketplace parameters and treasury to the BigFile DAO.
             </motion.p>
             <motion.div className="">
               <motion.p className="tw-lead-sm mb-2 my-2 font-bold">
@@ -488,19 +379,19 @@ let result = model.run(tvec!
           title="Explore AI on BigFile"
           cards={[
             {
-              label: "Apply to ErisAI Grants",
-              href: "https://thebigfile.com/grants",
+              label: "Read the Technical Docs",
+              href: "https://thebigfile.com/docs",
             },
             {
-              label: "Start building ErisAI",
+              label: "Discover Use Cases",
               href: "/docs/current/developer-docs/ai/overview",
             },
             {
-              label: "Chat with AI to learn more about BigFile",
+              label: "Rent On-Demand GPU Power",
               href: "/",
             },
             {
-              label: "Join the ErisAI working group",
+              label: "Become a Compute Provider",
               href: "https://forum.thebigfile.com/",
             },
           ]}

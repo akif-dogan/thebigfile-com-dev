@@ -2,18 +2,15 @@ import Link from "@docusaurus/Link";
 import DarkHeroStyles from "@site/src/components/Common/DarkHeroStyles";
 import transitions from "@site/static/transitions.json";
 import Layout from "@theme/Layout";
-import clsx from "clsx";
 import { motion } from "framer-motion";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import AnimateSpawn from "../components/Common/AnimateSpawn";
 import LinkArrowDown from "../components/Common/Icons/LinkArrowDown";
 import LinkArrowUpRight from "../components/Common/Icons/LinkArrowUpRight";
 import Newsletter from "../components/Common/Newsletter/Newsletter";
 import ShareMeta from "../components/Common/ShareMeta";
-import { Stat, StatsPanel } from "../components/Common/Stats";
 import Globe from "../components/Community/Globe";
 import { Hub, HubCard } from "../components/Community/Hubs";
-import { SpringCounter } from "../components/LandingPage/PreHero/Counters";
 import { useDarkHeaderInHero } from "../utils/use-dark-header-in-hero";
 import TelegramLogo from "@site/static/img/community/telegram.svg";
 
@@ -91,133 +88,7 @@ const UpcomingHubCard: React.FC<{
   );
 };
 
-const stats: {
-  title: string;
-  value: string;
-  fallbackValue: string;
-}[][] = [
-  [
-    { title: "Active Countries", value: "5", fallbackValue: "" },
-    { title: "Grants Awarded", value: "1", fallbackValue: "" },
-    { title: "Events Launched", value: "0", fallbackValue: "" },
-    { title: "Official BIG.Hubs", value: "1", fallbackValue: "" },
-  ],
 
-  [
-    { title: "University Collaborations", value: "0", fallbackValue: "" },
-    { title: "Network Entrepreneurs", value: "1", fallbackValue: "" },
-    { title: "New Users Accounts", value: "50", fallbackValue: "" },
-  ],
-
-  [
-    { title: "Ecosystem Partnerships", value: "0", fallbackValue: "" },
-    { title: "Conference Appearances", value: "0", fallbackValue: "" },
-    { title: "Incubated Projects", value: "0", fallbackValue: "" },
-  ],
-  [
-    { title: "Hackathons Held", value: "0", fallbackValue: "" },
-    { title: "Education Courses", value: "0", fallbackValue: "" },
-    { title: "Devs Trained", value: "2", fallbackValue: "" },
-  ],
-];
-
-const FadeInOutTitle: React.FC<{
-  title: string;
-}> = ({ title }) => {
-  const [currentTitle, setCurrentTitle] = useState(title);
-  const [nextTitle, setNextTitle] = useState(title);
-
-  useEffect(() => {
-    setNextTitle(title);
-    const handle = setTimeout(() => {
-      setCurrentTitle(title);
-    }, 300);
-    return () => clearTimeout(handle);
-  }, [title]);
-
-  return (
-    <span className="inline-grid text-center">
-      <span
-        className={clsx(
-          "col-start-1 row-start-1 duration-300",
-          currentTitle !== nextTitle
-            ? "opacity-0 transition-opacity"
-            : "opacity-1 transition-none"
-        )}
-      >
-        {currentTitle}
-      </span>
-      {currentTitle !== nextTitle && (
-        <span className="col-start-1 row-start-1 stat-fade-in">
-          {nextTitle}
-        </span>
-      )}
-    </span>
-  );
-};
-
-const rotationIndexes = [2, 0, 1, 3];
-
-const RotatingStatPanel: React.FC<{}> = () => {
-  const [activeIndexes, setActiveIndexes] = useState([0, 0, 0, 0]);
-  const [rotationIndex, setRotationIndex] = useState(0);
-  const [windowFocused, setWindowFocused] = useState(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (!windowFocused) {
-        return;
-      }
-
-      const newActiveIndexes = [...activeIndexes];
-      const nextIndexToChange = rotationIndexes[rotationIndex];
-      newActiveIndexes[nextIndexToChange] =
-        (newActiveIndexes[nextIndexToChange] + 1) %
-        stats[nextIndexToChange].length;
-
-      setActiveIndexes(newActiveIndexes);
-      setRotationIndex((i) => (i + 1) % rotationIndexes.length);
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, [activeIndexes, rotationIndex, windowFocused]);
-
-  useEffect(() => {
-    const onVisibilityChange = () => setWindowFocused(!document.hidden);
-    document.addEventListener("visibilitychange", onVisibilityChange);
-    return () => {
-      document.removeEventListener("visibilitychange", onVisibilityChange);
-    };
-  }, []);
-
-  const statsToDisplay = activeIndexes.map((index, i) => stats[i][index]);
-
-  return (
-    <StatsPanel className="mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:justify-between gap-10">
-      {statsToDisplay.map((stat, index) => (
-        <Stat
-          key={index} // use index here to avoid remounting for each stat
-          title={<FadeInOutTitle title={stat.title} />}
-          titleClassName="whitespace-nowrap"
-          value={
-            <SpringCounter
-              initialValue={+stat.value}
-              initialTarget={+stat.value}
-              target={+stat.value}
-              format={(value) =>
-                value > 1000000
-                  ? `${(value / 1000000).toFixed(0)} mil`
-                  : value.toFixed(0)
-              }
-              springConfig={[3, 1, 10]}
-            />
-          }
-          fallbackValue={stat.fallbackValue}
-        />
-      ))}
-    </StatsPanel>
-  );
-};
 
 function CommunityPage() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -256,15 +127,15 @@ function CommunityPage() {
                 className="tw-heading-3 md:tw-heading-2 mb-2 md:mb-6"
                 variants={transitions.item}
               >
-                BigFile Community
+                The Global Collective
                 <br />
-                around the world
+                Powering a New Internet
               </motion.h1>
               <motion.p
                 className="tw-lead-sm md:tw-lead mb-0"
                 variants={transitions.item}
               >
-                Be part of the inspiring collective of Web3 creators, builders, educators, and enthusiasts as we set out to explore how the BigFile can address challenges within today's blockchain ecosystem.
+                The BigFile community is a diverse collective of developers, storage providers, GPU owners, researchers, and visionaries united by a common goal: to build a more open, equitable, and efficient digital infrastructure. Whether you are building on our network, powering it with your hardware, or participating in its governance, you are a foundational part of BigFile.
               </motion.p>
             </div>
             <Globe
@@ -289,11 +160,6 @@ function CommunityPage() {
             />
           </AnimateSpawn>
         </section>
-        <div className="bg-page">
-          <div className="container-10 -translate-y-[110px] -mb-7 md:translate-y-10">
-            <RotatingStatPanel />
-          </div>
-        </div>
 
         <AnimateSpawn
           className="container-10 md:mt-48 relative"

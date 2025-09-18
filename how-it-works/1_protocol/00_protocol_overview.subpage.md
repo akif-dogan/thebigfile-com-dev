@@ -1,104 +1,85 @@
 ---
-title: Overview
-abstract:
-shareImage: /img/how-it-works/big-overview.jpg
+title: BigFile Architecture Overview
+abstract: A comprehensive deep dive into the technical architecture of the BigFile network, a Layer 2 DePIN for storage and AI built with the Polygon CDK.
+shareImage: /img/how-it-works/big-architecture.jpg
 slug: core-big-overview
 ---
 
-## BigFile Node – Overview
+## 1. BigFile Overview: The Next-Generation Decentralized Infrastructure
 
-#### BigFile Node: A Next-Generation Blockchain for Permanent Data and Bureaucratic Processes
-BigFile (BIG) is a groundbreaking decentralized blockchain network designed to redefine the way we manage and store digital data, execute smart contracts, and support both government and private sector use cases. Built as a hard fork of the Arweave protocol, BigFile enhances the foundational principles of decentralized storage and decentralization by introducing features tailored for modern bureaucratic processes and government operations. It also enables seamless management of evolving data versions while maintaining the immutability and transparency of blockchain.
+BigFile is a **DePIN (Decentralized Physical Infrastructure Network)** architected to be the foundational cloud for a new generation of the internet. Our mission is to solve two of the biggest bottlenecks in the digital world: the centralization of data storage and the prohibitive cost of computational power.
 
-### Key Features of BigFile Node
-#### 1. Permanent and Immutable Storage
-BigFile inherits the core functionality of Arweave's permaweb by enabling "pay-once, store-forever" data storage. This ensures that uploaded data remains accessible indefinitely, free from the risk of loss or alteration.
+We achieve this by building a **Layer 2 Appchain with the Polygon CDK**. This approach allows us to create a sovereign, high-performance ecosystem that leverages the battle-tested security of Ethereum, rather than attempting to build an isolated, insecure Layer 1 from scratch.
 
-- Version Management: Unlike traditional blockchain systems, BigFile introduces a unique versioning mechanism. When new versions of data are uploaded, the previous versions are retained as "archived versions," creating a complete historical record of all changes. This is particularly useful for legal documents, public records, and regulatory compliance.
-- Immutable Records: Every piece of data is cryptographically secured and stored immutably, guaranteeing data integrity and trustworthiness.
+---
 
-#### 2. Decentralized Bureaucratic Solutions
-BigFile is designed to empower governments, institutions, and organizations to transition their bureaucratic systems to the blockchain. By integrating blockchain-based workflows, BigFile ensures transparency, efficiency, and security for critical processes such as:
+## 2. The Core Problem: Bottlenecks of the Centralized Web
 
-- Identity Management: Store and verify national IDs, driver's licenses, and other identity-related documents on the blockchain.
-- Ownership Records: Digitize property titles, vehicle registrations, and real estate deeds for tamper-proof ownership tracking.
-- Legal Documents: Store contracts, marriage certificates, and wills with immutable timestamps and cryptographic signatures.
-- Election Management: Enable secure and transparent voting processes by storing ballots and election results immutably.
+The modern internet, despite its advancements, relies on a fragile foundation controlled by a handful of mega-corporations. This creates two fundamental problems:
 
-#### 3. Seamless Data Versioning
-A revolutionary aspect of BigFile is its ability to manage evolving data. Instead of overwriting old data, BigFile nodes archive the previous version and append the new version. This provides:
+* **Data Centralization:** Our data—from personal files to critical business records—is held hostage in centralized "walled gardens." This leads to censorship, privacy risks, and ever-increasing costs.
+* **The AI Compute Monopoly:** The immense GPU power required for the AI revolution is a privilege, accessible only to those who can afford the exorbitant fees charged by centralized cloud providers. This stifles innovation and concentrates power.
 
-- Historical Transparency: Users can access all previous versions of a document, making it ideal for audit trails and regulatory compliance.
-- Immutable Metadata: Every update is linked to a parent record, ensuring traceability and transparency for all data revisions.
+BigFile was born to dismantle these barriers.
 
-For example:
-A property title can have multiple updates (ownership changes) while keeping the entire history intact.
-Government laws and regulations can be stored as living documents, with updates marked as new versions.
+---
 
-### How BigFile Works
-#### 1. Proof-of-Access (SPoRA) and Decentralized Storage
-BigFile nodes operate on a consensus mechanism called Succinct Proofs of Random Access (SPoRA), which ensures that data is stored and retrievable without relying on centralized entities. Each BigFile node:
+## 3. Our Solution: A Two-Sided DePIN Marketplace
 
-- Stores Data Blocks: Nodes permanently store blocks and transactions while replicating them across the network for redundancy.
-- Verifies Data Integrity: SPoRA requires nodes to prove they have access to randomly selected blocks, ensuring data availability and reliability.
+BigFile solves these problems by creating a self-reinforcing economic flywheel—a two-sided marketplace that connects a global community of providers with users.
 
-#### 2. API and dApp Integration
-BigFile offers a robust set of APIs and development tools to support seamless integration into bureaucratic and enterprise workflows. These APIs enable:
+1.  **The Supply Side (Providers):** Our protocol uses `BIG` token incentives to encourage a permissionless, global network of individuals and data centers to contribute their idle disk space (**Storage Providers**) and GPU power (**Compute Providers**).
+2.  **The Demand Side (Users):** This creates a vast, competitive pool of resources. This abundance of storage and compute attracts users—dApps, developers, AI researchers, and enterprises—who need a cost-effective, censorship-resistant alternative to traditional cloud services.
+3.  **The Value Flow:** Users pay for services in `BIG` tokens. This creates organic demand for the token, and the revenue is used to further reward providers, funding a perpetual growth loop.
 
-- Data Upload and Retrieval: Institutions can upload documents and retrieve them securely using cryptographic keys.
-- Version Management: APIs allow users to query specific versions or access the entire history of a document.
-- Custom dApps: Developers can build decentralized applications (dApps) tailored to specific government or corporate needs, such as contract management or tax records.
+---
 
-#### 3. Metadata-Driven Functionality
-BigFile's metadata layer tracks essential details about uploaded data, including:
+## 4. Technical Architecture: Why a Layer 2 ZK-Rollup?
 
-- Versioning Information: Links between old and new versions of a document.
-- Ownership and Permissions: Cryptographic signatures identify document owners and authorized users.
-- Timestamps: Immutable timestamps ensure that all data changes are accurately recorded.
+Our technical stack is chosen for maximum security, scalability, and future-proofing.
 
-### Use Cases of BigFile
-#### 1. Government and Legal Systems
-BigFile provides a secure, transparent, and efficient platform for digitizing bureaucratic processes:
+### 4.1. Polygon CDK: A Modular and Sovereign Foundation
 
-- Property Registries: Property deeds and titles are stored immutably, ensuring disputes are minimized.
-- Legal Contracts: Contracts are stored with cryptographic signatures and version history, enabling secure and transparent legal processes.
-- Election Integrity: Voting systems can leverage BigFile to store ballots and results in a tamper-proof manner, ensuring transparency and trust in elections.
+The BigFile Chain is a custom Layer 2 built with the **Polygon Chain Development Kit (CDK)**. This framework allows us to create a sovereign appchain with full control over our environment, including the ability to use `BIG` as the native gas token, while still benefiting from the vast Polygon and Ethereum ecosystems.
 
-#### 2. Enterprise Data Management
-Businesses can use BigFile to manage critical data, such as:
+### 4.2. ZK-Rollups: The Guarantee of Mathematical Trust
 
-- Audit Trails: Maintain immutable records of financial transactions and business operations.
-- Document Management: Store and manage sensitive documents, including contracts and intellectual property, with full version control.
+"Don't trust, verify" is our core principle. We use **ZK-Rollup technology** to provide mathematical certainty.
 
-#### 3. Public Sector Solutions
-BigFile can serve as the foundation for smart cities and public services:
+* **Proof-of-Storage:** Storage Providers must periodically generate ZK-proofs to prove they are correctly storing the data entrusted to them.
+* **Proof-of-Computation:** Compute Providers must generate a ZK-proof to prove they correctly executed a specific AI model or task.
 
-- Citizen Portals: Offer a decentralized platform for managing personal records, such as health records and tax documents.
-- Public Archives: Digitize and preserve cultural and historical records for future generations.
+This system of verifiable computation eliminates the need to trust anonymous providers, creating a truly trustless foundation for our marketplaces.
 
-### Benefits of BigFile
-#### 1. Permanent Storage
-BigFile ensures that once data is uploaded, it is stored forever. This eliminates the risk of data loss and provides a reliable foundation for long-term projects and applications.
+### 4.3. The AggLayer Vision: A Future of Interoperability
 
-#### 2. Transparency and Accountability
-With immutable records and detailed version histories, BigFile promotes trust and accountability in all operations.
+BigFile is not designed to be an isolated island. By building with the Polygon CDK, we are positioned to connect to Polygon's **Aggregation Layer (AggLayer)**. This will enable seamless, atomic communication and shared liquidity between BigFile and hundreds of other L2 chains, establishing us as a foundational infrastructure layer for the entire Web3 ecosystem.
 
-#### 3. Decentralization and Censorship Resistance
-BigFile’s decentralized network ensures that no single entity can control or manipulate the data. This makes it ideal for preserving free speech, ensuring transparency, and protecting against censorship.
+---
 
-#### 4. Cost Efficiency
-BigFile’s "pay-once, store-forever" model eliminates ongoing hosting costs, making it an economical choice for governments, enterprises, and individuals.
+## 5. The `BIG` Token: The Economic Engine of the Ecosystem
 
-#### 5. Scalability and Security
-BigFile nodes are designed to scale seamlessly with growing data demands, ensuring high performance and reliability. The SPoRA consensus mechanism provides robust security without excessive energy consumption.
+The `BIG` token is the multi-faceted utility asset that powers all operations within BigFile. Its role evolves with our phased strategy.
 
-### Expanding the BigFile Ecosystem
-BigFile is not just a storage solution; it is a platform for innovation. Developers and institutions can leverage BigFile’s infrastructure to build custom solutions that address specific needs. Examples include:
+### 5.1. Phase 1: Economic Foundation on Polygon PoS
 
-- BigDrive: A user-friendly interface for uploading and managing files on BigFile.
-- dApps for Bureaucracy: Custom applications for digitizing bureaucratic processes.
-- Decentralized Gateways: Enable self-sovereign data access without relying on centralized servers.
+Initially, the `BIG` token launches as an **upgradeable ERC-20** on the Polygon PoS network with a sophisticated economic engine designed to build our community and treasury:
+* **Autonomous Tokenomics:** A 2% tax on all transactions perpetually funds a DEX liquidity pool (**Auto-Liquidity**) and distributes passive income in USDC to holders (**USDC Reflection**).
+* **Fair Launch Mechanics:** Built-in Anti-Whale and Anti-Bot rules ensure a fair and stable initial market.
+* **Transparent Governance:** The contract's ownership is transferred to a **TimelockController**, ensuring all critical changes are public and time-delayed.
 
-BigFile represents a new frontier in blockchain technology, combining the permanence and decentralization of traditional blockchain with innovative features for version control and bureaucratic applications. By empowering governments, enterprises, and individuals with secure, transparent, and cost-effective solutions, BigFile is redefining what’s possible in the digital age.
+### 5.2. Phase 2: Native Asset on the BigFile Chain
 
-Join the revolution and shape the future of decentralized data management with BigFile. Together, we can build a more transparent, efficient, and equitable digital world.
+When the BigFile L2 mainnet launches, `BIG` migrates to become the native asset of our sovereign network, unlocking its true utility:
+* **Gas Token:** All transaction fees ("gas") on the BigFile L2 will be paid exclusively in `BIG`.
+* **Staking Asset:** Providers will be required to stake `BIG` to offer services and secure the network, earning staking rewards.
+* **Payment Currency:** `BIG` will be the sole currency for all storage and AI compute services.
+* **Governance Right:** `BIG` will grant voting power in the **BigFile DAO**, giving the community full control over the protocol's future.
+
+---
+
+## 6. Conclusion: Building the Future, Together
+
+BigFile represents a new frontier in Web3 infrastructure, combining the proven economic model of DePIN with the cutting-edge security of ZK-Rollups. We are building the tools for a more open, fair, and efficient digital world.
+
+Join us in building the decentralized cloud of tomorrow.

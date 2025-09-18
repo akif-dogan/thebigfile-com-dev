@@ -1,56 +1,71 @@
 ---
-title: "Tokenomics of the BigFile"
-abstract: 
+title: The BIG Token Economy
+abstract: A deep dive into the tokenomics of the BIG token, its dual-phase lifecycle, and its role as the economic engine for the BigFile ecosystem.
 shareImage: /img/how-it-works/tokenomics.600.jpg
 slug: tokenomics
 ---
 
-# Tokenomics of the BigFile
+## The `BIG` Token: The Economic Engine of the BigFile Ecosystem
 
+The `BIG` token is the multi-faceted utility asset that powers all operations, incentivizes participation, and governs the future of the BigFile network. Our tokenomics are built on a pragmatic, two-phased strategy designed for immediate community building in Phase 1 and deep, sustainable utility in Phase 2.
 
-### The BIG utility token
+---
 
-The BigFile (BIG) network utilizes a utility token called BIG, which serves several functions within the protocol:
+### Phase 1: The Autonomous ERC-20 on Polygon PoS
 
-1) *Governance:* Any BIG holder can participate in the governance of the BIG network by staking BIG tokens. This allows them to vote on or submit governance proposals and earn voting rewards.
-2) *Resource Payment:* BIG can be converted into cycles, which are used to pay for BigFile resources.
-3) *Node Provider Remuneration:* BIG tokens are used to compensate node providers who operate the node machines that run the BigFile network.
-4) *Participation in DAOs:* BIG can be used to participate in token swaps of decentralized autonomous organizations (DAOs) on the BIG network.
+Our journey begins with the `BIG` token launching as a sophisticated, upgradeable ERC-20 on the robust and highly liquid Polygon PoS network. This initial phase is designed to build a strong community, establish a stable economic base, and fund the development of our Layer 2.
 
-These four protocol use cases are elaborated on in the following sections. Additionally, BIG can be used as a medium of exchange to pay for goods and services such as NFTs, subscriptions, and more.
+#### The Economic Engine: The 2% Transaction Tax
 
-### Governance and voting rewards
+The core of the Phase 1 economy is a 2% universal tax applied to all `BIG` token transactions (buys, sells, and transfers). This tax is not a fee that disappears; it is the fuel that powers a self-sustaining economic flywheel with two key mechanisms:
 
-Anyone can participate in the governance of the BIG network by staking BIG tokens in what are called neurons. Neuron holders can vote on proposals—suggestions on how the BIG network should evolve. A neuron's voting power is proportional to the amount of BIG staked and other characteristics, such as the staking duration. For example, a neuron can double its voting power by setting the staking duration to the maximum of 8 years. This increased voting power for longer staking periods creates an incentive to vote on proposals that aim to maximize the value of their staked BIG over the long term.
+**1. The Auto-Liquidity Mechanism (1%):**
+* **What it is:** Half of every tax (1%) is sent to the smart contract's holding address. When this accumulated amount reaches a predefined threshold, the function `_addLiquidityAutomatically` is triggered.
+* **How it works:** The function takes the accumulated `BIG` tokens, swaps half for `MATIC` (POL) on a DEX, and pairs the remaining `BIG` with the newly acquired `MATIC` to create a new Liquidity Pool (LP) token. These LP tokens are then sent to a burn address (`0x0...dEaD`), permanently locking them and adding to the token's price floor.
+* **Why it matters:** This creates a constantly rising liquidity floor, ensuring deeper markets, greater price stability, and reduced volatility over time. It is a perpetual, automated investment in the project's own health.
 
-Participation in governance increases the maturity of voting neurons, which can then be used to mint BIG. Every day, the BIG network calculates a voting reward pot according to a schedule and divides it among all eligible neurons based on their relative voting power. The reward schedule is designed to incentivize early adoption: Initially, at genesis, maturity corresponding to 10% of the total supply of BIG is distributed as voting rewards on an annualized basis. Over the course of ten years, this percentage decreases to 5%.
+**2. The USDC Reflection Mechanism (1%):**
+* **What it is:** The other half of every tax (1%) is allocated to reward long-term holders.
+* **How it works:** When the accumulated reflection amount reaches its threshold, the `_distributeReflections` function is triggered. It swaps the collected `BIG` tokens for `USDC` (or another stablecoin) and distributes this `USDC` proportionally to all `BIG` token holders. Holders can then claim their accumulated USDC rewards through our dApp dashboard.
+* **Why it matters:** This provides a direct, tangible, and stable passive income stream to our community, rewarding long-term belief in the project over short-term speculation.
 
-Because the daily reward amount is independent of the overall amount of staked BIG in the system, rewards are distributed to neurons in proportion to their voting power and the proportion of proposals they voted on. This mechanism naturally incentivizes staking BIG and participating in governance: the lower the participation, the higher the rewards.
+#### Fair Launch & Security Mechanics
 
-Neurons can be configured to vote automatically by following the votes of other neurons, an advanced form of "liquid democracy." Neurons that vote automatically still receive their full share of voting rewards, enabling the BIG community to reach decisions securely and quickly.
+The Phase 1 contract is built with multiple layers of protection:
+* **Anti-Whale:** Limits on maximum transaction and wallet sizes prevent market manipulation.
+* **Anti-Bot:** A transfer cooldown mechanism mitigates the impact of sniper bots at launch.
+* **Upgradeable & Secure:** The contract is a UUPS proxy, secured with `ReentrancyGuard`, `Pausable` functions, and its ownership is transferred to a `TimelockController` for transparent governance.
 
-### Cycles as fuel for computation and other resources
+---
 
-BIG tokens can be used to pay for the resources consumed on the BIG network. Specifically, BIG tokens can be converted into cycles (i.e., burned), and these cycles are used by developers to pay for installing smart contracts, known as "cubes," on the BIG network, as well as for the resources that cubes consume (such as storage, CPU, and bandwidth). The cycle price is pegged to a basket of fiat currencies, so the conversion rate from BIG to cycles fluctuates with the market price of BIG. This ensures that the cost to developers for acquiring fuel to run their applications remains predictable.
+### Phase 2: The Native Coin of the BigFile L2 Chain
 
-In this so-called "reverse gas model" of the BIG network, developers pre-pay costs by loading their canisters with computation cycles. As a result, users can interact with decentralized applications (dapps) without needing tokens or dealing with seed phrases. Since the cost of cycles is stable, developers can accurately estimate how much they will need to spend on computation, storage, and other resources.
+The ultimate purpose of the `BIG` token is realized with the launch of the BigFile Chain, our sovereign Layer 2 network. The ERC-20 `BIG` token will be seamlessly migrated via a secure 1:1 bridge to become the native coin of this new, high-performance ecosystem, unlocking its true utility.
 
-### Node provider rewards
+#### Core Utilities on the L2:
 
-BIG tokens are used to remunerate node providers—entities that own and operate the computing nodes that run the BigFile network. Node provider rewards are paid in newly minted BIG tokens. The remuneration they receive is fixed per node and is closely related to their actual costs. It depends on two main factors: First, the location of the node, as hosting prices vary between locations. Second, the type of node, which refers to the hardware and connectivity specifications.
+* **Gas Token: The Fuel for Transactions**
+    Every single transaction on the BigFile L2—from a user uploading a file to a developer deploying a smart contract—will require `BIG` to be paid as a gas fee. This creates a fundamental and perpetual demand for the token.
 
-To cover the investment and running costs of nodes, which are incurred in fiat currency, node provider rewards are specified in XDR (a basket of international currencies) and are converted into BIG based on the average exchange rate over the last 30 days.
+* **Staking Asset: The Pillar of Security**
+    To participate in the network as a provider (Storage or Compute) or as a validator/sequencer, operators will be required to stake a significant amount of `BIG` tokens. This stake acts as a security deposit, ensures honest behavior, and allows them to earn staking rewards from the protocol.
 
-### Investing in the BIG ecosystem
+* **Payment Currency: The Medium of Exchange**
+    `BIG` will be the exclusive currency for all services within the ecosystem. Users will pay `BIG` to store data and rent GPU power. This revenue is then distributed to the providers, creating a closed-loop, self-sustaining economy.
 
-BIG provides a plug-and-play solution for developers to transfer control of their dapps to a Decentralized Autonomous Organization (DAO) and raise funds in the process.
+* **Governance Right: The Voice of the Community**
+    Staked `BIG` will grant voting power in the BigFile DAO. Holders will have direct control over the protocol's future, including treasury spending, technical upgrades, and strategic direction.
 
-As part of a "decentralization swap," users can commit BIG tokens to a new DAO. In return, once the decentralization swap is complete, these users receive tokens of the DAO, with everyone paying the same price. Developers can specify a time period and set minimum and maximum funding targets of BIG to be collected, which determines when the sale concludes.
+---
+### Supply & Distribution
 
-The BIG tokens raised through the decentralization swap are retained within the reserves of the fully autonomous DAO, rather than being forwarded to the original developers of the dapp or service. These funds can be used to pay for future computation needs of the dapp and to offer code bounties for future enhancements.
+The `BIG` token has a fixed, non-inflatable total supply of **200,000,000** tokens. The distribution is strategically allocated as follows:
 
-Investments via decentralization swaps in DAOs act as rocket fuel for the BIG ecosystem, providing easy and transparent access to exciting Web3 projects and channeling funds into the productive use of the platform.
+* **Ecosystem & Treasury:** 35%
+* **Staking & Provider Rewards:** 20%
+* **Team & Advisors:** 15% (Subject to a 24-month vesting schedule)
+* **Strategic Round:** 10%
+* **Liquidity & Market Making:** 10%
+* **Legacy Holder Swap & Airdrop:** 10%
 
-### Development of total supply
-
-BIG has both inflationary and deflationary mechanisms. Governance participants can convert their voting rewards into newly minted BIG tokens, and node providers receive their rewards in the form of newly minted BIG as well. On the other hand, BIG is converted into cycles (i.e., burned) to pay for computation and storage, creating a deflationary effect.
+This balanced allocation ensures we have the resources for long-term development and growth while empowering our community and fairly rewarding all participants.

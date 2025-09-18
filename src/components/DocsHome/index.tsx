@@ -34,11 +34,10 @@ const DocsHomePage: FC = () => {
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="px-8 py-10 md:p-10 rounded-lg bg-infinite text-white sm:col-span-2 md:row-span-2 bg-[url(/img/docs/hero-bg.webp)] bg-center bg-cover flex flex-col">
           <h1 className="tw-heading-3 sm:tw-heading-60 md:tw-heading-2 mb-14">
-            Developer Docs
+          Build the Next Generation of DePIN
           </h1>
           <p className="tw-lead mb-20 flex-1">
-            Start a DAO, create a token, build dapps and host assets with the
-            full tech stack entirely 100% on chain.
+          Welcome to the BigFile Developer Hub. Find the tools, SDKs, and in-depth guides you need to leverage our decentralized storage layer and on-demand AI compute marketplace, all built on the scalable and secure Polygon ecosystem.
           </p>
           <div className={"flex flex-row gap-2 flex-wrap"}>
             <p className="mb-0">
@@ -98,31 +97,7 @@ const DocsHomePage: FC = () => {
           </div>
           <div className="snap-x flex sm:contents overflow-auto scroll-m-10 pb-5 border-0  border-solid border-black/10 docs-home-languages-scrollbar">
 
-            <div className="snap-center min-w-[80vw] sm:min-w-0 border-0 border-r sm:border-r-0 md:border-r sm:border-t md:border-t-0 border-solid border-black/10 px-6 sm:pl-8 sm:pr-0 md:px-6 pt-10 sm:pb-10 md:pb-0 md:pt-0 flex flex-col">
-              <div className="mb-16 md:mb-0 md:h-[200px]">
-                <img
-                  src="/img/docs/rust.png"
-                  alt="Rust docs for the BigFile"
-                  className="w-10 h-10"
-                  loading="lazy"
-                />
-              </div>
-              <div className="flex-1 flex flex-col">
-                <h4 className="tw-heading-5 mb-6">Rust(Q2-2026)</h4>
-                <p className="tw-paragraph text-black/80 mb-6 flex-1">
-                  Use Rust - a high performance and safe programming language to build high efficiency apps on BigFile
-                </p>
-                <p className="mb-0">
-                  <Link
-                    href="/docs/current/developer-docs/backend/rust/"
-                    className="link-primary"
-                    title="Go to Rust docs"
-                  >
-                    <LinkArrowRight />
-                  </Link>
-                </p>
-              </div>
-            </div>
+            
             <div className="snap-center min-w-[80vw] sm:min-w-0 border-0 border-r sm:border-t md:border-t-0 border-solid border-black/10 px-6 sm:pl-0 sm:pr-8 md:px-6 pt-10  md:pt-0 flex flex-col">
               <div className="mb-16 md:mb-0 md:h-[200px]">
                 <img
@@ -286,14 +261,13 @@ const DocsHomePage: FC = () => {
               BigFile
             </div>
             <h2 className="tw-heading-3 mb-4 sm:w-5/10 md:w-8/10">
-              Help us make the docs better
+            Contribute to BigFile
             </h2>
             <p className="tw-paragraph mb-10 sm:w-6/10 md:w-8/10 md:flex-1">
-              These docs are a community effort. Create a PR if you see
-              mistakes, room for improvement, or new opportunities to help BigFile developers.
+            Our documentation and code are open-source. Found an error or have an idea for a new guide? Submit a pull request on GitHub and help us grow.
             </p>
             <Link
-              href="https://github.com/thebigfilecom/thebigfile-com-dev"
+              href="https://github.com/the-bigfile"
               target="_blank"
               rel="noopener noreferrer"
               className="button-outline-white"
