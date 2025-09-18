@@ -391,7 +391,8 @@ function FeaturesPage() {
               In the world of Web3 gaming and NFTs, permanence is everything. BigFile provides the foundational layer for truly ownable digital assets. Ensure your game's assets, digital art, or virtual worlds are stored forever, independent of any single server or company. Build immersive gaming experiences where in-game items are truly yours, permanently.
             </motion.p>
 
-            <motion.p className="mb-0" variants={transitions.item}>
+            {/* TEMPORARILY DISABLED - NFT PAGE */}
+            {/* <motion.p className="mb-0" variants={transitions.item}>
               <Link
                 href="/nft"
                 className="tw-heading-6 flex gap-2 items-center"
@@ -399,7 +400,7 @@ function FeaturesPage() {
                 <RightPointer className="w-6 h-6"></RightPointer>
                 More on Web3 Gaming
               </Link>
-            </motion.p>
+            </motion.p> */}
           </SingleCard>
         </section>
 

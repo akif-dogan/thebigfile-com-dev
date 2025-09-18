@@ -273,12 +273,13 @@ function WhatIsBigPage() {
               <p className="tw-paragraph md:tw-lead-sm mb-6 md:mb-10">
               BIG ID is a platform enabling users to securely store and manage their data on the BigFile network. It offers the ability to permanently store files in a decentralized and reliable manner.
               </p>
-              <Link
+              {/* TEMPORARILY DISABLED - BIG ID PAGE */}
+              {/* <Link
                 className="link-primary link-with-icon"
                 href="/big-id"
               >
                 <LinkArrowRight /> Wallet on BIG
-              </Link>
+              </Link> */}
             </TranslatedLayout>
             <TranslatedLayout imageUrl="/img/what-is-big-file/sovereign-infrastructure.webp">
               <h3 className="tw-heading-4 md:tw-heading-60 mb-6">

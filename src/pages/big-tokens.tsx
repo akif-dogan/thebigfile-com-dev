@@ -14,7 +14,6 @@ import transitions from "@site/static/transitions.json";
 import { motion } from "framer-motion";
 
 const queryClient = new QueryClient();
-const MotionLink = motion(Link);
 
 const NnsTvl: React.FC = () => {
   const globalData = useGlobalData();
@@ -44,31 +43,6 @@ const NnsTvl: React.FC = () => {
   return <>{tvl}</>;
 };
 
-const WalletCard: React.FC<{
-  title: string;
-  description: string;
-  link: string;
-  icon: string;
-}> = ({ title, description, link, icon }) => {
-  return (
-    <MotionLink
-      to={link}
-      className="flex gap-6 items-start bg-white/80 rounded-xl p-4 border border-white border-solid text-black hover:text-black hover:no-underline"
-      variants={transitions.item}
-    >
-      <img
-        src={icon}
-        alt=""
-        className="w-14 h-14 object-contain object-center"
-        loading="lazy"
-      />
-      <div className="">
-        <h3 className="tw-heading-6 mb-0">{title}</h3>
-        <p className="tw-paragraph-sm text-black/60 mb-0">{description}</p>
-      </div>
-    </MotionLink>
-  );
-};
 
 function TokenHolders(): JSX.Element {
   const globalData = useGlobalData();
@@ -101,14 +75,14 @@ function TokenHolders(): JSX.Element {
                   className="tw-heading-3 md:tw-heading-2 mb-8 md:mb-6 relative"
                   variants={transitions.item}
                 >
-                  Understanding the BIG token{" "}
+                  The Engine of the Decentralized Cloud{" "}
                 </motion.h1>
                 <motion.p
                   className="tw-lead-sm md:tw-lead mb-0 relative"
                   variants={transitions.item}
                 >
-                  Engage with the BigFile and its ecosystem through <br />
-                  the use of its native utility token.
+                  The BIG token is the multi-faceted utility asset that powers, <br />
+                  secures, and governs the entire BigFile ecosystem. It is designed with a dual-phase lifecycle: starting as a feature-rich ERC-20 on the Polygon PoS network to build our community and economy, and evolving into the native coin of our high-performance Layer 2 chain.
                 </motion.p>
               </div>
             </AnimateSpawn>
@@ -132,31 +106,13 @@ function TokenHolders(): JSX.Element {
                 className="tw-heading-4 md:tw-heading-3 mb-6 text-gradient"
                 variants={transitions.item}
               >
-                BIG Token plays multiple essential roles within the BigFile ecosystem:{" "}
+                Phase 1: The Autonomous Economic Engine on Polygon{" "}
               </motion.h2>
               <motion.p
                 className="tw-paragraph md:tw-lead-sm text-black/60 mb-3"
                 variants={transitions.item}
               >
-                Decentralized Data Storage: Users pay with BIG Token to store their data permanently on the BigFile network. The "pay once, store forever" model ensures that, once the storage fee is paid, the data remains permanently stored on the network.
-              </motion.p>
-              <motion.p
-                className="tw-paragraph md:tw-lead-sm text-black/60 mb-3"
-                variants={transitions.item}
-              >
-                Versioning: When users want to add new versions to the data they have permanently uploaded, they make payments using BIG Token.
-              </motion.p>
-              <motion.p
-                className="tw-paragraph md:tw-lead-sm text-black/60 mb-3"
-                variants={transitions.item}
-              >
-                Network Participation and Incentives: Miners earn BIG Token by contributing storage capacity and ensuring the network operates smoothly. This incentive mechanism helps maintain the security and sustainability of the network.
-              </motion.p>
-              <motion.p
-                className="tw-paragraph md:tw-lead-sm text-black/60 mb-3"
-                variants={transitions.item}
-              >
-                Ecosystem Development: dApps and projects running on BigFile pay transaction fees using BIG Token. Project owners and developers leverage BIG Token to run their applications, raise funds, and support the growth of the ecosystem.
+                In its initial phase on Polygon, the BIG token operates a self-sustaining economy designed to reward long-term holders and ensure market stability. A 2% tax on large transactions perpetually funds two core protocol functions:
               </motion.p>
             </div>
             <div className="flex flex-col gap-5 md:flex-row md:w-8/10">
@@ -222,7 +178,7 @@ function TokenHolders(): JSX.Element {
               variants={transitions.item}
             >
               <h2 className="tw-heading-3 mb-0 md:tw-heading-60">
-                Ways to use BIG tokens
+              Phase 2: The Native Coin of the BigFile L2 Chain
               </h2>
             </AnimateSpawn>
             <div className="container-12 grid grid-cols-1 gap-5 md:grid-cols-2">
@@ -231,10 +187,10 @@ function TokenHolders(): JSX.Element {
                 variants={transitions.item}
               >
                 <h3 className="tw-heading-5 md:tw-heading-4 mb-6">
-                 Decentralized Data Storage
+                Payment for Services
                 </h3>
                 <p className="tw-paragraph md:tw-lead-sm mb-6 text-black/60">
-                  Users pay with BIG Token to store their data permanently on the BigFile network. The "pay once, store forever" model ensures that, once the storage fee is paid, the data remains permanently stored on the network. When users want to add new versions to the data they have permanently uploaded, they make payments using BIG Token.
+                 BIG will be the exclusive currency for all services on the network. Users will pay BIG to store data and rent on-demand GPU power.
                 </p>
                 <p className="mb-0">
                   <Link
@@ -251,10 +207,10 @@ function TokenHolders(): JSX.Element {
                 variants={transitions.item}
               >
                 <h3 className="tw-heading-5 md:tw-heading-4 mb-6">
-                  Network Participation and Incentives
+                 Staking & Security
                 </h3>
                 <p className="tw-paragraph md:tw-lead-sm mb-6 text-black/60">
-                  Miners earn BIG Token by contributing storage capacity and ensuring the network operates smoothly. This incentive mechanism helps maintain the security and sustainability of the network.
+                Providers of storage and compute will be required to stake BIG to join the network and earn rewards, securing the protocol and ensuring honest behavior.
                 </p>
                 <p className="mb-0">
                   <Link
@@ -280,10 +236,10 @@ function TokenHolders(): JSX.Element {
               >
                 <div className="sm:w-6/10 lg:w-4/10">
                   <h3 className="tw-heading-5 md:tw-heading-4 mb-6">
-                    Ecosystem Development
+                    Gas & Governance
                   </h3>
                   <p className="tw-paragraph md:tw-lead-sm mb-6 text-black/60">
-                  dApps and projects running on BigFile pay transaction fees using BIG Token. Project owners and developers leverage BIG Token to run their applications, raise funds, and support the growth of the ecosystem.
+                  As the native coin, BIG will be used to pay for all transaction fees (gas) on our L2. Staked BIG will also grant voting power in the BigFile DAO.
                   </p>
                   <p className="pb-[100%] sm:pb-0 mb-0">
                     <Link
@@ -312,10 +268,10 @@ function TokenHolders(): JSX.Element {
               className="tw-heading-3 md:tw-heading-60 mb-8"
               variants={transitions.item}
             >
-              Where to get BIG{" "}
+              Join the BigFile Economy{" "}
             </motion.h2>
             <motion.p className="tw-lead mb-8" variants={transitions.item}>
-            Once the BIG Token Mainnet is launched, it will be available for purchase through various platforms. Details about different versions of BIG Token issued on multiple blockchain networks will be provided.
+            Acquire the BIG token on leading decentralized exchanges on the Polygon network. Become a part of our growing ecosystem today.
             </motion.p>
             <motion.p className="mb-0" variants={transitions.item}>
               <Link
@@ -327,122 +283,6 @@ function TokenHolders(): JSX.Element {
             </motion.p>
           </AnimateSpawn>
 
-          <section className="container-12 pt-20 md:pt-40">
-            <AnimateSpawn
-              className="text-center md:w-8/10 md:mx-auto"
-              variants={transitions.container}
-            >
-              <motion.h2
-                id="anchor-wallets"
-                className="tw-heading-3 md:tw-heading-60 mb-6 md:mb-8"
-                variants={transitions.item}
-              >
-                Wallets &amp; custody
-              </motion.h2>
-              <motion.p
-                className="tw-lead-sm md:tw-lead mb-6 md:mb-8"
-                variants={transitions.item}
-              >
-                Understand the benefits and limitations of each custody option so you can choose the wallet that best suits your needs.
-              </motion.p>
-              <motion.p className="mb-0" variants={transitions.item}>
-                <Link
-                  className="link-primary link-with-icon"
-                  href="https://wiki.thebigfile.com/wiki/BIG_custody_options"
-                >
-                  Learn more about custody options <LinkArrowUpRight />
-                </Link>
-              </motion.p>
-            </AnimateSpawn>
-            <AnimateSpawn
-              className="grid grid-cols-1 gap-16 mt-16 md:mt-24 md:grid-cols-3"
-              variants={transitions.container}
-            >
-              {/* Column 1 */}
-              <motion.div className="" variants={transitions.item}>
-                <h3 className="tw-heading-5 mb-6">Web Wallets</h3>
-                <p className="tw-paragraph text-black/60 mb-8">
-                  Web-based dapps that are easily accessible with the creation of an BIG ID. Great for daily use and small amount
-                  transfers.
-                </p>
-                <div className="space-y-4">
-                  <WalletCard
-                    title="BIGID"
-                    description="Web3 Identity. Every new account creates an untraceable hardware wallet."
-                    link="https://bigid.thebigfile.com/"
-                    icon="/img/showcase/nfid_logo.webp"
-                  />
-                </div>
-              </motion.div>
-              {/* Column 2 */}
-              <motion.div className="" variants={transitions.item}>
-                <h3 className="tw-heading-5 mb-6">Mobile app wallets</h3>
-                <p className="tw-paragraph text-black/60 mb-8">
-                  Mobile apps offer easy access to crypto assets for people who use them frequently.
-                </p>
-                <div className="space-y-4">
-                  
-                </div>
-
-                <h3 className="tw-heading-5 mb-6 mt-16">
-                  Browser extension wallets
-                </h3>
-                <p className="tw-paragraph text-black/60 mb-8">
-                  Great for users already familiar with crypto wallets from other chains.
-                </p>
-
-                <div className="space-y-4">
-                  
-                  
-                </div>
-              </motion.div>
-              {/* Column 3 */}
-              <motion.div className="" variants={transitions.item}>
-                <h3 className="tw-heading-5 mb-6">Hardware wallets</h3>
-                <p className="tw-paragraph text-black/60 mb-8">
-                  Maximum security. Hardware wallets hold private keys in
-                  airgapped machines or ledger devices.
-                </p>
-                <div className="space-y-4">
-                  <WalletCard
-                    title="Ledger"
-                    description="Complete control of crypto assets via a Ledger hardware wallet and Ledger app."
-                    link="https://ledger.com/"
-                    icon="/img/showcase/ledger_logo.webp"
-                  />
-                  
-                </div>
-                <h3 className="tw-heading-5 mb-6 mt-16">
-                  Institutional custody
-                </h3>
-                <p className="tw-paragraph text-black/60 mb-8">
-                  For anyone managing large amounts of crypto assets.
-                  Institutional custodians offer reliability and customer
-                  support.
-                </p>
-                <div className="space-y-4">
-                  <WalletCard
-                    title="Sygnum"
-                    description="World’s first digital asset bank providing institutional-grade security to BIG holders."
-                    link="https://www.sygnum.com/"
-                    icon="/img/showcase/sygnum_logo.webp"
-                  />
-                  <WalletCard
-                    title="Coinbase"
-                    description="Store assets in segregated cold storage. An institutional-grade custody solution. "
-                    link="https://www.coinbase.com/"
-                    icon="/img/showcase/coinbase_logo.webp"
-                  />
-                  <WalletCard
-                    title="Taurus"
-                    description="Banking-grade custody for digital asset management."
-                    link="https://www.taurushq.com/"
-                    icon="/img/showcase/taurus_logo.png"
-                  />
-                </div>
-              </motion.div>
-            </AnimateSpawn>
-          </section>
           <AnimateSpawn
             className="container-12 pt-24 md:pt-40 pb-30 relative"
             el={motion.section}
@@ -490,12 +330,13 @@ function TokenHolders(): JSX.Element {
                   Build and use DeFi apps on the BigFile that are
                   hosted 100% on the blockchain.
                 </p>
-                <p className="mb-0">
+                {/* TEMPORARILY DISABLED - DEFI PAGE */}
+                {/* <p className="mb-0">
                   <Link href="/defi" className="link-primary link-with-icon">
                     <LinkArrowRight />
                     DeFi on BIG
                   </Link>
-                </p>
+                </p> */}
               </motion.div>
               <motion.div
                 className="flex-1 bg-white/90 border border-white border-solid rounded-xl p-6 text-center md:p-12"

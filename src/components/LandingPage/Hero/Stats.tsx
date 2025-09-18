@@ -4,7 +4,7 @@ import {
   getEthEquivTxRateMultiplier,
   getTransactionRateV3,
 } from "@site/src/utils/network-stats";
-import React, { ReactNode } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import { ConstantRateCounter, SpringCounter } from "../PreHero/Counters";
 import InfoIcon from "../PreHero/InfoIcon";
@@ -12,6 +12,12 @@ import { motion } from "framer-motion";
 import Link from "@docusaurus/Link";
 import { DashboardIcon } from "./Dashboardicon";
 import transitions from "@site/static/transitions.json";
+import { 
+  fetchBigTokenPrice, 
+  fetchMaticPrice,
+  calculateBigMaticRatio,
+  formatBigMaticRatio
+} from "@site/src/utils/big-token-price";
 
 function formatNumber(x: number) {
   return x
@@ -160,20 +166,68 @@ export const EthEquivalentTxRate = () => {
 };
 */
 
- export const SmartContractMemory = () => {
+export const SmartContractMemory = () => {
+  const [bigMaticRatio, setBigMaticRatio] = useState<number | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchPrices = async () => {
+      setIsLoading(true);
+      try {
+        const [bigPrice, maticPrice] = await Promise.all([
+          fetchBigTokenPrice(),
+          fetchMaticPrice()
+        ]);
+
+        if (bigPrice && maticPrice) {
+          const ratio = calculateBigMaticRatio(bigPrice.price, maticPrice);
+          setBigMaticRatio(ratio);
+        }
+      } catch (error) {
+        console.error('Failed to fetch prices:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    // Initial fetch
+    fetchPrices();
+
+    // Set up interval to refresh every 30 seconds
+    const interval = setInterval(fetchPrices, 30000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <motion.div
-      className="backdrop-blur-lg rounded-xl text-white tw-lead-lg py-3 px-6  hidden md:block"
+      className="backdrop-blur-lg rounded-xl text-white tw-lead-lg py-3 px-6 hidden md:block"
       variants={transitions.fadeIn}
     >
       <figure className="m-0">
-        $30 <span className="tw-lead-sm">/GB / Forever</span>
+        {isLoading ? (
+          <div className="tw-lead-sm text-white/60">Loading...</div>
+        ) : bigMaticRatio ? (
+          <>
+            BIG <span className="tw-lead-sm">/ {formatBigMaticRatio(bigMaticRatio)} POL</span>
+          </>
+        ) : (
+          <div className="tw-lead-sm text-white/60">Price unavailable</div>
+        )}
         <figcaption className="tw-paragraph text-white/50 flex items-center gap-1">
-          Pay Once, Enjoy Forever
+          Live BIG/MATIC Price
           <Info>
-            <h3 className="tw-button-xs mb-1">Memory is $30/GB / Forever</h3>
+            <h3 className="tw-button-xs mb-1">BIG Token Price</h3>
             <p className="tw-caption text-white/50 mb-0">
-            BigDrive provides decentralized, secure data storage for a simple one-time fee. Easily top up with BIG tokens to add storage credits. Plus, downloading your data or sharing your files is always free.
+              Current BIG token price against MATIC (Polygon) on QuickSwap. 
+              <Link
+                className="text-white hover:underline hover:text-white ml-1"
+                href="https://polygonscan.com/address/0x0A0eddbbF609d3b0c168a52f64345721D582906a"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on PolygonScan
+              </Link>
             </p>
           </Info>
         </figcaption>
@@ -186,7 +240,7 @@ export const EthEquivalentTxRate = () => {
 export const LiveStats = () => {
   return (
     <motion.div
-      className="backdrop-blur-lg rounded-xl py-3 px-6  hidden md:flex"
+      className="backdrop-blur-lg rounded-xl py-3 px-6 hidden md:flex"
       variants={transitions.fadeIn}
     >
       <Link

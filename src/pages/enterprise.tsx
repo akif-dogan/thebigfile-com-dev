@@ -169,7 +169,8 @@ function EnterprisePage() {
               <p className="tw-lead-sm mb-6 md:mb-10">
               There's no need to build proprietary identity solutions or rely on for-profit companies to safeguard user data and privacy. BIG ID is a privacy-focused authentication framework native to BigFile, empowering both individuals and businesses with full control over their digital identities. Using secure passkeys, BIG ID seamlessly integrates with any service running on BigFile, enabling a secure and decentralized approach to identity management. The BigFile web wallet enhances this experience, allowing users to deploy decentralized data directly from their browser, securely connect to decentralized applications, and navigate the weave effortlessly. With BIG ID, the future of digital identity is secure, private, and user-centric.
               </p>
-              <p className="mb-0">
+              {/* TEMPORARILY DISABLED - BIG ID PAGE */}
+              {/* <p className="mb-0">
                 <Link
                   href="/big-id"
                   className="link-white link-with-icon"
@@ -177,7 +178,7 @@ function EnterprisePage() {
                   <LinkArrowRight />
                   More on BIG ID
                 </Link>
-              </p>
+              </p> */}
             </TranslatedLayout>
                         
             <TranslatedLayout imageUrl="/img/big-tokens/hero.webp">

@@ -175,21 +175,23 @@ const marketingNav = {
             },
             
           ],
-          featured: {
-            title: "Connect BIG ID",
-            href: "/big-id",
-            image: "/img/nav/featured-capabilities.webp",
-          },
+          // TEMPORARILY DISABLED - BIG ID PAGE
+          // featured: {
+          //   title: "Connect BIG ID",
+          //   href: "/big-id",
+          //   image: "/img/nav/featured-capabilities.webp",
+          // },
         },
       ],
     },
     {
       name: "Use",
       auxItems: [
-        {
-          name: "Create an BIG ID",
-          href: "https://big-id.thebigfile.com/",
-        },
+        // TEMPORARILY DISABLED - BIG ID PAGE
+        // {
+        //   name: "Create an BIG ID",
+        //   href: "https://big-id.thebigfile.com/",
+        // },
         { name: "BigDrive", href: "https://bigdrive.thebigfile.com/" },
       ],
 
@@ -207,11 +209,12 @@ const marketingNav = {
               href: "/big-tokens",
               description: "Use native utility token",
             },
-            {
-              name: "BIG ID",
-              href: "/big-id",
-              description: "Web3 authentication",
-            },
+            // TEMPORARILY DISABLED - BIG ID PAGE
+            // {
+            //   name: "BIG ID",
+            //   href: "/big-id",
+            //   description: "Web3 authentication",
+            // },
           ],
           featured: {
             title: "Hello, Decentralized AI",
@@ -227,21 +230,24 @@ const marketingNav = {
               href: "/enterprise",
               description: "Extend Web2 software with blockchain",
             },
-            {
-              name: "Social Platforms",
-              href: "/social-platforms",
-              description: "Decentralized Social Media",
-            },
-            {
-              name: "DeFi",
-              href: "/defi",
-              description: "On-chain swaps",
-            },
-            {
-              name: "NFTs",
-              href: "/nft",
-              description: "NFT’s live fully on-chain",
-            },
+            // TEMPORARILY DISABLED - SOCIAL PLATFORMS PAGE
+            // {
+            //   name: "Social Platforms",
+            //   href: "/social-platforms",
+            //   description: "Decentralized Social Media",
+            // },
+            // TEMPORARILY DISABLED - DEFI PAGE
+            // {
+            //   name: "DeFi",
+            //   href: "/defi",
+            //   description: "On-chain swaps",
+            // },
+            // TEMPORARILY DISABLED - NFT PAGE
+            // {
+            //   name: "NFTs",
+            //   href: "/nft",
+            //   description: "NFT's live fully on-chain",
+            // },
           ],
           featured: {
             title: "Multi Chain Technology",

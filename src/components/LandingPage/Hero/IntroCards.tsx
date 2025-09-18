@@ -99,11 +99,12 @@ const IntroCards: React.FC = () => {
             <p className="tw-paragraph md:tw-lead-sm mb-0 flex-1">
             Monetize your idle hardware and become a foundational part of the decentralized internet. Whether you have spare disk space or underutilized GPU cycles, you can connect to the BigFile network. Our autonomous protocol matches your resources with user demand, rewarding you with BIG tokens for every service provided. Participation is permissionless.
             </p>
-            <p className="mb-0">
+            {/* TEMPORARILY DISABLED - BIG ID PAGE */}
+            {/* <p className="mb-0">
               <Link className="button-outline" href="/big-id">
                Become a Provider
               </Link>
-            </p>
+            </p> */}
           </motion.div>
         </AnimateSpawn>
       </div>
