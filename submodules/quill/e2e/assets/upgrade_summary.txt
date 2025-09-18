@@ -1,1 +1,0 @@
---This proposal upgrades the SPS-controlled canister.

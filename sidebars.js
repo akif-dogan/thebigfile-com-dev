@@ -253,7 +253,6 @@ const sidebars = {
                 "developer-docs/developer-tools/cli-tools/advanced-dfx/specifying-replica-version",
               ],
             },
-            "developer-docs/developer-tools/cli-tools/big-admin",
           ],
         },
         {
@@ -525,7 +524,6 @@ const sidebars = {
               items: [
                 "tutorials/developer-journey/level-4/4.1-big-ledger",
                 "tutorials/developer-journey/level-4/4.4-bigdrive-governance",
-                "tutorials/developer-journey/level-4/4.5-using-quill",
               ],
             },
             {
@@ -586,8 +584,6 @@ const sidebars = {
           type: "category",
           label: "BigFile specification",
           items: [
-            "references/http-gateway-protocol-spec",
-            "references/big-interface-spec",
             "references/id-encoding-spec",
           ],
         },

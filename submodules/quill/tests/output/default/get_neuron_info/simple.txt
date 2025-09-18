@@ -1,7 +1,0 @@
-Sending message with
-
-  Call type:   update
-  Sender:      2vxsx-fae
-  Cube id: rrkah-fqaaa-aaaaa-aaaaq-cai
-  Method name: get_neuron_info
-  Arguments:   (22_174 : nat64)

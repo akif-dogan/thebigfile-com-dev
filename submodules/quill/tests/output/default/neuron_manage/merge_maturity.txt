@@ -1,1 +1,0 @@
-Error: Merging maturity is no longer a supported option. See --stake-maturity. https://wiki.thebigfile.com/wiki/NNS_neuron_operations_related_to_maturity

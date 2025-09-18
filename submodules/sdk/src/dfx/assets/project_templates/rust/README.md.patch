@@ -1,9 +1,0 @@
---- a/README.md
-+++ b/README.md
-@@ -9,2 +9,6 @@
- - [Quick Start](https://thebigfile.com/docs/current/developer-docs/setup/deploy-locally)
- - [SDK Developer Tools](https://thebigfile.com/docs/current/developer-docs/setup/install)
-+- [Rust Cube Development Guide](https://thebigfile.com/docs/current/developer-docs/backend/rust/)
-+- [ic-cdk](https://docs.rs/ic-cdk)
-+- [ic-cdk-macros](https://docs.rs/ic-cdk-macros)
-+- [Candid Introduction](https://thebigfile.com/docs/current/developer-docs/backend/candid/)

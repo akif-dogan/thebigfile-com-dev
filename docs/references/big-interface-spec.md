@@ -1,1 +1,0 @@
-../../submodules/interface-spec/spec/index.md
